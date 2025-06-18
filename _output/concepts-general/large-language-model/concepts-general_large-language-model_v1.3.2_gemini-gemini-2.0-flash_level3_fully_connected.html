@@ -1,0 +1,454 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+             /* position absolute is important and the container has to be relative or absolute as well. */
+          div.popup {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 display:none;
+                 background-color:#f5f4ed;
+                 -moz-border-radius: 3px;
+                 -webkit-border-radius: 3px;
+                 border-radius: 3px;
+                 border: 1px solid #808074;
+                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          }
+
+          /* hide the original tooltip */
+          .vis-tooltip {
+            display:none;
+          }
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"group": 3, "id": "Speech recognition", "label": "Speech recognition", "level": 3, "name": "Speech Recognition", "node_count": 15, "processed": 2, "shape": "dot", "size": 10, "title": "15. \u003ca href=\u0027https://en.wikipedia.org/wiki/Speech_recognition\u0027 target=\u0027_blank\u0027\u003eSpeech recognition\u003c/a\u003e\u003cbr /\u003e\nSpeech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Speech_recognition", "wikipedia_content": "\nSpeech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.", "wikipedia_link": "https://en.wikipedia.org/wiki/Speech_recognition", "wikipedia_normalized": "Speech recognition", "wikipedia_resp_code": 200}, {"group": 2, "id": "Natural language processing", "label": "Natural language processing", "level": 2, "name": "Natural Language Processing", "node_count": 2, "processed": 2, "shape": "dot", "size": 10, "title": "2. \u003ca href=\u0027https://en.wikipedia.org/wiki/Natural_language_processing\u0027 target=\u0027_blank\u0027\u003eNatural language processing\u003c/a\u003e\u003cbr /\u003eNatural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.\u003cbr /\u003e[200, G2, L2, PR]", "wikipedia_canonical": "Natural_language_processing", "wikipedia_content": "Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.", "wikipedia_link": "https://en.wikipedia.org/wiki/Natural_language_processing", "wikipedia_normalized": "Natural language processing", "wikipedia_resp_code": 200}, {"group": 2, "id": "Transformer (machine learning model)", "label": "Transformer (machine learning model)", "level": 2, "name": "Transformer (machine learning model)", "node_count": 1, "processed": 2, "shape": "dot", "size": 10, "title": "1. \u003ca href=\u0027https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)\u0027 target=\u0027_blank\u0027\u003eTransformer (machine learning model)\u003c/a\u003e \u2192 \u003ca href=\u0027https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)\u0027 target=\u0027_blank\u0027\u003eTransformer (deep learning architecture)\u003c/a\u003e\u003cbr /\u003eThe transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis\u003cbr /\u003e[200, G2, L2, PR]", "wikipedia_canonical": "Transformer_(deep_learning_architecture)", "wikipedia_content": "The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis", "wikipedia_link": "https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)", "wikipedia_normalized": "Transformer (deep learning architecture)", "wikipedia_resp_code": 200}, {"group": 3, "id": "Attention (machine learning)", "label": "Attention (machine learning)", "level": 3, "name": "Attention Mechanism", "node_count": 6, "processed": 2, "shape": "dot", "size": 10, "title": "6. \u003ca href=\u0027https://en.wikipedia.org/wiki/Attention_(machine_learning)\u0027 target=\u0027_blank\u0027\u003eAttention (machine learning)\u003c/a\u003e\u003cbr /\u003eIn machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by \"soft\" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Attention_(machine_learning)", "wikipedia_content": "In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by \"soft\" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size.", "wikipedia_link": "https://en.wikipedia.org/wiki/Attention_(machine_learning)", "wikipedia_normalized": "Attention (machine learning)", "wikipedia_resp_code": 200}, {"group": 3, "id": "Neural machine translation", "label": "Neural machine translation", "level": 3, "name": "Neural Machine Translation", "node_count": 7, "processed": 2, "shape": "dot", "size": 10, "title": "7. \u003ca href=\u0027https://en.wikipedia.org/wiki/Neural_machine_translation\u0027 target=\u0027_blank\u0027\u003eNeural machine translation\u003c/a\u003e\u003cbr /\u003eNeural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Neural_machine_translation", "wikipedia_content": "Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.", "wikipedia_link": "https://en.wikipedia.org/wiki/Neural_machine_translation", "wikipedia_normalized": "Neural machine translation", "wikipedia_resp_code": 200}, {"group": 500, "id": "Sequence-to-sequence model", "label": "Sequence-to-sequence model", "level": 3, "name": "Sequence-to-Sequence Model", "node_count": 8, "processed": 2, "shape": "dot", "size": 10, "title": "8. \u003ca href=\u0027https://en.wikipedia.org/wiki/Sequence-to-sequence_model\u0027 target=\u0027_blank\u0027\u003eSequence-to-sequence model\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003e[404, G500, L3, PR]", "wikipedia_canonical": "", "wikipedia_content": "", "wikipedia_link": "https://en.wikipedia.org/wiki/Sequence-to-sequence_model", "wikipedia_normalized": "", "wikipedia_resp_code": 404}, {"group": 3, "id": "BERT (language model)", "label": "BERT (language model)", "level": 3, "name": "BERT (Bidirectional Encoder Representations from Transformers)", "node_count": 9, "processed": 2, "shape": "dot", "size": 10, "title": "9. \u003ca href=\u0027https://en.wikipedia.org/wiki/BERT_(language_model)\u0027 target=\u0027_blank\u0027\u003eBERT (language model)\u003c/a\u003e\u003cbr /\u003e \nBidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "BERT_(language_model)", "wikipedia_content": " \nBidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.", "wikipedia_link": "https://en.wikipedia.org/wiki/BERT_(language_model)", "wikipedia_normalized": "BERT (language model)", "wikipedia_resp_code": 200}, {"group": 3, "id": "GPT-3", "label": "GPT-3", "level": 3, "name": "GPT (Generative Pre-trained Transformer)", "node_count": 10, "processed": 2, "shape": "dot", "size": 10, "title": "10. \u003ca href=\u0027https://en.wikipedia.org/wiki/GPT-3\u0027 target=\u0027_blank\u0027\u003eGPT-3\u003c/a\u003e\u003cbr /\u003eGenerative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "GPT-3", "wikipedia_content": "Generative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020.", "wikipedia_link": "https://en.wikipedia.org/wiki/GPT-3", "wikipedia_normalized": "GPT-3", "wikipedia_resp_code": 200}, {"group": 3, "id": "Connectionism", "label": "Connectionism", "level": 3, "name": "Connectionism", "node_count": 24, "processed": 2, "shape": "dot", "size": 10, "title": "24. \u003ca href=\u0027https://en.wikipedia.org/wiki/Connectionism\u0027 target=\u0027_blank\u0027\u003eConnectionism\u003c/a\u003e\u003cbr /\u003eConnectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Connectionism", "wikipedia_content": "Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.", "wikipedia_link": "https://en.wikipedia.org/wiki/Connectionism", "wikipedia_normalized": "Connectionism", "wikipedia_resp_code": 200}, {"group": 2, "id": "Artificial neural network", "label": "Artificial neural network", "level": 2, "name": "Neural network", "node_count": 5, "processed": 2, "shape": "dot", "size": 10, "title": "5. \u003ca href=\u0027https://en.wikipedia.org/wiki/Artificial_neural_network\u0027 target=\u0027_blank\u0027\u003eArtificial neural network\u003c/a\u003e \u2192 \u003ca href=\u0027https://en.wikipedia.org/wiki/Neural_network_(machine_learning)\u0027 target=\u0027_blank\u0027\u003eNeural network (machine learning)\u003c/a\u003e\u003cbr /\u003eIn machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks.\u003cbr /\u003e[200, G2, L2, PR]", "wikipedia_canonical": "Neural_network_(machine_learning)", "wikipedia_content": "In machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks.", "wikipedia_link": "https://en.wikipedia.org/wiki/Artificial_neural_network", "wikipedia_normalized": "Neural network (machine learning)", "wikipedia_resp_code": 200}, {"group": 3, "id": "Cognitive science", "label": "Cognitive science", "level": 3, "name": "Cognitive science", "node_count": 26, "processed": 2, "shape": "dot", "size": 10, "title": "26. \u003ca href=\u0027https://en.wikipedia.org/wiki/Cognitive_science\u0027 target=\u0027_blank\u0027\u003eCognitive science\u003c/a\u003e\u003cbr /\u003eCognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Cognitive_science", "wikipedia_content": "Cognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp", "wikipedia_link": "https://en.wikipedia.org/wiki/Cognitive_science", "wikipedia_normalized": "Cognitive science", "wikipedia_resp_code": 200}, {"group": 3, "id": "Machine learning", "label": "Machine learning", "level": 3, "name": "Machine Learning", "node_count": 12, "processed": 2, "shape": "dot", "size": 10, "title": "12. \u003ca href=\u0027https://en.wikipedia.org/wiki/Machine_learning\u0027 target=\u0027_blank\u0027\u003eMachine learning\u003c/a\u003e\u003cbr /\u003eMachine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Machine_learning", "wikipedia_content": "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.", "wikipedia_link": "https://en.wikipedia.org/wiki/Machine_learning", "wikipedia_normalized": "Machine learning", "wikipedia_resp_code": 200}, {"group": 3, "id": "Backpropagation", "label": "Backpropagation", "level": 3, "name": "Backpropagation", "node_count": 17, "processed": 2, "shape": "dot", "size": 10, "title": "17. \u003ca href=\u0027https://en.wikipedia.org/wiki/Backpropagation\u0027 target=\u0027_blank\u0027\u003eBackpropagation\u003c/a\u003e\u003cbr /\u003eIn machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Backpropagation", "wikipedia_content": "In machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates.", "wikipedia_link": "https://en.wikipedia.org/wiki/Backpropagation", "wikipedia_normalized": "Backpropagation", "wikipedia_resp_code": 200}, {"group": 3, "id": "Artificial intelligence", "label": "Artificial intelligence", "level": 3, "name": "Artificial Intelligence", "node_count": 13, "processed": 2, "shape": "dot", "size": 10, "title": "13. \u003ca href=\u0027https://en.wikipedia.org/wiki/Artificial_intelligence\u0027 target=\u0027_blank\u0027\u003eArtificial intelligence\u003c/a\u003e\u003cbr /\u003eArtificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Artificial_intelligence", "wikipedia_content": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.", "wikipedia_link": "https://en.wikipedia.org/wiki/Artificial_intelligence", "wikipedia_normalized": "Artificial intelligence", "wikipedia_resp_code": 200}, {"group": 2, "id": "Deep learning", "label": "Deep learning", "level": 2, "name": "Deep Learning", "node_count": 3, "processed": 2, "shape": "dot", "size": 10, "title": "3. \u003ca href=\u0027https://en.wikipedia.org/wiki/Deep_learning\u0027 target=\u0027_blank\u0027\u003eDeep learning\u003c/a\u003e\u003cbr /\u003eDeep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and \"training\" them to process data. The adjective \"deep\" refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised.\u003cbr /\u003e[200, G2, L2, PR]", "wikipedia_canonical": "Deep_learning", "wikipedia_content": "Deep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and \"training\" them to process data. The adjective \"deep\" refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised.", "wikipedia_link": "https://en.wikipedia.org/wiki/Deep_learning", "wikipedia_normalized": "Deep learning", "wikipedia_resp_code": 200}, {"group": 3, "id": "Generative adversarial network", "label": "Generative adversarial network", "level": 3, "name": "Generative adversarial network", "node_count": 21, "processed": 2, "shape": "dot", "size": 10, "title": "21. \u003ca href=\u0027https://en.wikipedia.org/wiki/Generative_adversarial_network\u0027 target=\u0027_blank\u0027\u003eGenerative adversarial network\u003c/a\u003e\u003cbr /\u003eA generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent\u0027s gain is another agent\u0027s loss.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Generative_adversarial_network", "wikipedia_content": "A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent\u0027s gain is another agent\u0027s loss.", "wikipedia_link": "https://en.wikipedia.org/wiki/Generative_adversarial_network", "wikipedia_normalized": "Generative adversarial network", "wikipedia_resp_code": 200}, {"group": 3, "id": "Variational autoencoder", "label": "Variational autoencoder", "level": 3, "name": "Variational autoencoder", "node_count": 20, "processed": 2, "shape": "dot", "size": 10, "title": "20. \u003ca href=\u0027https://en.wikipedia.org/wiki/Variational_autoencoder\u0027 target=\u0027_blank\u0027\u003eVariational autoencoder\u003c/a\u003e\u003cbr /\u003eIn machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Variational_autoencoder", "wikipedia_content": "In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods.", "wikipedia_link": "https://en.wikipedia.org/wiki/Variational_autoencoder", "wikipedia_normalized": "Variational autoencoder", "wikipedia_resp_code": 200}, {"group": 2, "id": "Generative model", "label": "Generative model", "level": 2, "name": "Generative model", "node_count": 4, "processed": 2, "shape": "dot", "size": 10, "title": "4. \u003ca href=\u0027https://en.wikipedia.org/wiki/Generative_model\u0027 target=\u0027_blank\u0027\u003eGenerative model\u003c/a\u003e\u003cbr /\u003eIn statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to \"generate\" random instances (outcomes\u003cbr /\u003e[200, G2, L2, PR]", "wikipedia_canonical": "Generative_model", "wikipedia_content": "In statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to \"generate\" random instances (outcomes", "wikipedia_link": "https://en.wikipedia.org/wiki/Generative_model", "wikipedia_normalized": "Generative model", "wikipedia_resp_code": 200}, {"group": 3, "id": "Text mining", "label": "Text mining", "level": 3, "name": "Text Mining", "node_count": 14, "processed": 2, "shape": "dot", "size": 10, "title": "14. \u003ca href=\u0027https://en.wikipedia.org/wiki/Text_mining\u0027 target=\u0027_blank\u0027\u003eText mining\u003c/a\u003e\u003cbr /\u003eText mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves \"the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources.\" Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Text_mining", "wikipedia_content": "Text mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves \"the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources.\" Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al.", "wikipedia_link": "https://en.wikipedia.org/wiki/Text_mining", "wikipedia_normalized": "Text mining", "wikipedia_resp_code": 200}, {"group": 3, "id": "Computational linguistics", "label": "Computational linguistics", "level": 3, "name": "Computational Linguistics", "node_count": 11, "processed": 2, "shape": "dot", "size": 10, "title": "11. \u003ca href=\u0027https://en.wikipedia.org/wiki/Computational_linguistics\u0027 target=\u0027_blank\u0027\u003eComputational linguistics\u003c/a\u003e\u003cbr /\u003eComputational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Computational_linguistics", "wikipedia_content": "Computational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math", "wikipedia_link": "https://en.wikipedia.org/wiki/Computational_linguistics", "wikipedia_normalized": "Computational linguistics", "wikipedia_resp_code": 200}, {"group": 3, "id": "Discriminative model", "label": "Discriminative model", "level": 3, "name": "Discriminative model", "node_count": 19, "processed": 2, "shape": "dot", "size": 10, "title": "19. \u003ca href=\u0027https://en.wikipedia.org/wiki/Discriminative_model\u0027 target=\u0027_blank\u0027\u003eDiscriminative model\u003c/a\u003e\u003cbr /\u003eDiscriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Discriminative_model", "wikipedia_content": "Discriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints.", "wikipedia_link": "https://en.wikipedia.org/wiki/Discriminative_model", "wikipedia_normalized": "Discriminative model", "wikipedia_resp_code": 200}, {"group": 3, "id": "Computational neuroscience", "label": "Computational neuroscience", "level": 3, "name": "Computational neuroscience", "node_count": 25, "processed": 2, "shape": "dot", "size": 10, "title": "25. \u003ca href=\u0027https://en.wikipedia.org/wiki/Computational_neuroscience\u0027 target=\u0027_blank\u0027\u003eComputational neuroscience\u003c/a\u003e\u003cbr /\u003eComputational neuroscience is a branch of\u00a0neuroscience\u00a0which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Computational_neuroscience", "wikipedia_content": "Computational neuroscience is a branch of\u00a0neuroscience\u00a0which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.", "wikipedia_link": "https://en.wikipedia.org/wiki/Computational_neuroscience", "wikipedia_normalized": "Computational neuroscience", "wikipedia_resp_code": 200}, {"group": 3, "id": "Autoregressive model", "label": "Autoregressive model", "level": 3, "name": "Autoregressive model", "node_count": 22, "processed": 2, "shape": "dot", "size": 10, "title": "22. \u003ca href=\u0027https://en.wikipedia.org/wiki/Autoregressive_model\u0027 target=\u0027_blank\u0027\u003eAutoregressive model\u003c/a\u003e\u003cbr /\u003eIn statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Autoregressive_model", "wikipedia_content": "In statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w", "wikipedia_link": "https://en.wikipedia.org/wiki/Autoregressive_model", "wikipedia_normalized": "Autoregressive model", "wikipedia_resp_code": 200}, {"group": 3, "id": "Markov chain", "label": "Markov chain", "level": 3, "name": "Markov chain", "node_count": 23, "processed": 2, "shape": "dot", "size": 10, "title": "23. \u003ca href=\u0027https://en.wikipedia.org/wiki/Markov_chain\u0027 target=\u0027_blank\u0027\u003eMarkov chain\u003c/a\u003e\u003cbr /\u003eIn probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, \"What happens next depends only on the state of affairs now.\" A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Markov_chain", "wikipedia_content": "In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, \"What happens next depends only on the state of affairs now.\" A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a", "wikipedia_link": "https://en.wikipedia.org/wiki/Markov_chain", "wikipedia_normalized": "Markov chain", "wikipedia_resp_code": 200}, {"group": 3, "id": "Convolutional neural network", "label": "Convolutional neural network", "level": 3, "name": "Convolutional Neural Network", "node_count": 18, "processed": 2, "shape": "dot", "size": 10, "title": "18. \u003ca href=\u0027https://en.wikipedia.org/wiki/Convolutional_neural_network\u0027 target=\u0027_blank\u0027\u003eConvolutional neural network\u003c/a\u003e\u003cbr /\u003eA convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced\u2014in some cases\u2014by newer deep learning architectures such as t\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Convolutional_neural_network", "wikipedia_content": "A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced\u2014in some cases\u2014by newer deep learning architectures such as t", "wikipedia_link": "https://en.wikipedia.org/wiki/Convolutional_neural_network", "wikipedia_normalized": "Convolutional neural network", "wikipedia_resp_code": 200}, {"group": 3, "id": "Representation learning", "label": "Representation learning", "level": 3, "name": "Representation Learning", "node_count": 16, "processed": 2, "shape": "dot", "size": 10, "title": "16. \u003ca href=\u0027https://en.wikipedia.org/wiki/Representation_learning\u0027 target=\u0027_blank\u0027\u003eRepresentation learning\u003c/a\u003e \u2192 \u003ca href=\u0027https://en.wikipedia.org/wiki/Feature_learning\u0027 target=\u0027_blank\u0027\u003eFeature learning\u003c/a\u003e\u003cbr /\u003eIn machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task.\u003cbr /\u003e[200, G3, L3, PR]", "wikipedia_canonical": "Feature_learning", "wikipedia_content": "In machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task.", "wikipedia_link": "https://en.wikipedia.org/wiki/Representation_learning", "wikipedia_normalized": "Feature learning", "wikipedia_resp_code": 200}, {"group": 1, "id": "Large language model", "label": "Large language model", "level": 1, "name": "Large language model", "node_count": 0, "processed": 2, "shape": "dot", "size": 10, "title": "0. \u003ca href=\u0027https://en.wikipedia.org/wiki/Large_language_model\u0027 target=\u0027_blank\u0027\u003eLarge language model\u003c/a\u003e\u003cbr /\u003eA large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation.\u003cbr /\u003e[200, G1, L1, PR]", "wikipedia_canonical": "Large_language_model", "wikipedia_content": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation.", "wikipedia_link": "https://en.wikipedia.org/wiki/Large_language_model", "wikipedia_normalized": "Large language model", "wikipedia_resp_code": 200}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Speech recognition", "reason": "Speech recognition is a crucial component of Natural Language Processing (NLP). NLP deals with enabling computers to understand and process human language, and speech recognition provides the initial step of converting spoken language into a machine-readable format for further analysis by NLP algorithms.", "similarity": 0.85, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Transformer (machine learning model)", "reason": "The attention mechanism is the core component of the Transformer architecture. Transformers rely heavily on attention to weigh the importance of different parts of the input sequence when processing it. Without attention, the Transformer model would not function.", "similarity": 0.95, "to": "Attention (machine learning)", "width": 1}, {"arrows": "to", "from": "Transformer (machine learning model)", "reason": "Transformers were initially developed to improve Neural Machine Translation (NMT) and achieved state-of-the-art results in this area. NMT is a primary application of Transformers, and many Transformer architectures are designed with translation tasks in mind.", "similarity": 0.85, "to": "Neural machine translation", "width": 1}, {"arrows": "to", "from": "Transformer (machine learning model)", "reason": "Transformers are a type of sequence-to-sequence model, meaning they take a sequence as input and produce another sequence as output. While traditional sequence-to-sequence models often use recurrent neural networks (RNNs), Transformers offer an alternative approach using attention mechanisms.", "similarity": 0.8, "to": "Sequence-to-sequence model", "width": 1}, {"arrows": "to", "from": "Transformer (machine learning model)", "reason": "BERT is a specific Transformer-based model designed for pre-training on large amounts of text data. It leverages the Transformer architecture to learn contextualized word embeddings, which can then be fine-tuned for various downstream tasks. BERT is a direct descendant and application of the Transformer architecture.", "similarity": 0.9, "to": "BERT (language model)", "width": 1}, {"arrows": "to", "from": "Transformer (machine learning model)", "reason": "GPT is another Transformer-based model focused on generative tasks, particularly text generation. Like BERT, it is pre-trained on a massive dataset and then fine-tuned for specific applications. GPT showcases the versatility of the Transformer architecture beyond translation, demonstrating its effectiveness in language modeling and text generation.", "similarity": 0.88, "to": "GPT-3", "width": 1}, {"arrows": "to", "from": "Connectionism", "reason": "Artificial neural networks are the primary computational models used in connectionism. They share the core principles of distributed representation, parallel processing, and learning through adjusting connection weights.", "similarity": 0.95, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "Connectionism", "reason": "Connectionism is a significant approach within cognitive science, offering a computational framework for understanding mental processes. It contrasts with symbolic AI but aims to explain cognition.", "similarity": 0.85, "to": "Cognitive science", "width": 1}, {"arrows": "to", "from": "Connectionism", "reason": "Connectionist models, particularly neural networks, are a major part of machine learning. They learn from data by adjusting connection weights, enabling them to perform tasks without explicit programming.", "similarity": 0.8, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Backpropagation", "reason": "Backpropagation is the primary algorithm used to train most feedforward neural networks. It\u0027s intrinsically linked to the architecture and learning process of these networks, enabling them to learn complex patterns from data.", "similarity": 0.75, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "Artificial intelligence", "reason": "Machine learning is a core subfield of AI focused on enabling systems to learn from data without explicit programming. It\u0027s a primary method for achieving AI.", "similarity": 0.9, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Artificial intelligence", "reason": "Deep learning is a subfield of machine learning that uses artificial neural networks with multiple layers to analyze data and is a very popular and effective approach to AI.", "similarity": 0.85, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Artificial intelligence", "reason": "NLP is a branch of AI that deals with enabling computers to understand, interpret, and generate human language. It\u0027s crucial for applications like chatbots, machine translation, and sentiment analysis.", "similarity": 0.7, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Machine learning", "reason": "Machine learning is a subfield of artificial intelligence. AI is the broader concept of creating intelligent agents, while machine learning focuses on enabling systems to learn from data without explicit programming. Many AI systems leverage machine learning techniques.", "similarity": 0.9, "to": "Artificial intelligence", "width": 1}, {"arrows": "to", "from": "Machine learning", "reason": "Deep learning is a specific type of machine learning that uses artificial neural networks with multiple layers (deep neural networks) to analyze data. It has achieved significant success in areas like image recognition, natural language processing, and speech recognition. Deep learning is a subset of machine learning.", "similarity": 0.75, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Cognitive science", "reason": "AI aims to create intelligent systems, often drawing inspiration from cognitive processes. Cognitive science provides theoretical frameworks and insights into human intelligence that can be applied to AI development. Conversely, AI models can serve as computational models for cognitive theories.", "similarity": 0.75, "to": "Artificial intelligence", "width": 1}, {"arrows": "to", "from": "Generative adversarial network", "reason": "Both are generative models used for unsupervised learning, employing neural networks to learn latent representations and generate new data instances. Both also rely on training a model to reconstruct input data, though VAEs use a probabilistic encoder.", "similarity": 0.85, "to": "Variational autoencoder", "width": 1}, {"arrows": "to", "from": "Generative adversarial network", "reason": "Generative adversarial networks are a type of generative model. The concept of a generative model is a superset of GANs. Both aim to learn the underlying probability distribution of a dataset to generate new, similar samples.", "similarity": 0.9, "to": "Generative model", "width": 1}, {"arrows": "to", "from": "Generative adversarial network", "reason": "GANs are implemented using neural networks. The generator and discriminator in a GAN are typically neural networks. The underlying mathematical and computational framework is shared.", "similarity": 0.7, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "Text mining", "reason": "NLP is a core enabling technology for text mining, providing the tools to parse, understand, and extract meaning from text. Text mining often relies on NLP techniques for tasks like tokenization, part-of-speech tagging, and named entity recognition.", "similarity": 0.9, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Text mining", "reason": "Machine learning algorithms are widely used in text mining for tasks such as text classification, sentiment analysis, and topic modeling. Text mining often involves training machine learning models on text data to automate the process of knowledge discovery.", "similarity": 0.7, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Text mining", "reason": "Computational linguistics provides the theoretical and computational foundations for understanding and processing human language. Text mining benefits from the linguistic insights and tools developed in computational linguistics, particularly for tasks like semantic analysis and discourse analysis.", "similarity": 0.65, "to": "Computational linguistics", "width": 1}, {"arrows": "to", "from": "Discriminative model", "reason": "Generative and discriminative models are two main approaches to statistical classification. They both aim to classify data, but differ in their approach. Generative models learn the joint probability distribution, while discriminative models learn the conditional probability distribution directly. They are often contrasted with each other.", "similarity": 0.9, "to": "Generative model", "width": 1}, {"arrows": "to", "from": "Computational neuroscience", "reason": "Artificial neural networks are computational models inspired by the structure and function of biological neural networks. They are a key tool in computational neuroscience for simulating and understanding neural computation. While ANNs are often simplified compared to biological networks, they provide valuable insights into how neural networks can perform complex tasks.", "similarity": 0.7, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "Neural machine translation", "reason": "Neural machine translation relies heavily on deep learning techniques, particularly recurrent neural networks (RNNs) and transformers, to learn complex patterns in language.", "similarity": 0.85, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Neural machine translation", "reason": "The Transformer architecture has become the dominant approach in NMT, significantly improving performance compared to RNN-based models. It addresses limitations of RNNs in capturing long-range dependencies.", "similarity": 0.8, "to": "Transformer (machine learning model)", "width": 1}, {"arrows": "to", "from": "Artificial neural network", "reason": "Deep learning is a subfield of machine learning based on artificial neural networks with representation learning. Deep learning architectures such as deep neural networks, recurrent neural networks, convolutional neural networks and transformers have been applied to fields including computer vision, speech recognition, natural language processing, machine translation, bioinformatics, drug design, medical image analysis, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance.", "similarity": 0.95, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Artificial neural network", "reason": "Artificial neural networks are a core component of many machine learning algorithms. Machine learning is a broader field that encompasses various techniques for enabling computers to learn from data without explicit programming, and neural networks are a powerful tool within this field.", "similarity": 0.85, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Artificial neural network", "reason": "Connectionism is an approach in the fields of cognitive science and artificial intelligence that uses artificial neural networks to explain mental phenomena. It emphasizes the interconnectedness of simple units (neurons) to produce complex behavior, mirroring the structure and function of the brain.", "similarity": 0.8, "to": "Connectionism", "width": 1}, {"arrows": "to", "from": "Artificial neural network", "reason": "Computational neuroscience uses mathematical models and computer simulations to study the nervous system. Artificial neural networks are often used as simplified models of biological neural networks to understand how the brain processes information.", "similarity": 0.75, "to": "Computational neuroscience", "width": 1}, {"arrows": "to", "from": "Artificial neural network", "reason": "Cognitive science is the interdisciplinary study of mind and intelligence, which includes philosophy, neuroscience, artificial intelligence, linguistics, anthropology, psychology. Artificial neural networks are used as models of cognition and learning within cognitive science to understand how the brain performs cognitive tasks.", "similarity": 0.7, "to": "Cognitive science", "width": 1}, {"arrows": "to", "from": "Variational autoencoder", "reason": "VAEs are generative models, meaning they can be used to generate new data samples similar to the training data. This is a key characteristic and application of VAEs.", "similarity": 0.8, "to": "Generative model", "width": 1}, {"arrows": "to", "from": "Attention (machine learning)", "reason": "Transformers heavily rely on attention mechanisms as their core building block. The self-attention mechanism within transformers allows the model to weigh the importance of different parts of the input sequence when processing it, making it a direct application and extension of the attention concept.", "similarity": 0.95, "to": "Transformer (machine learning model)", "width": 1}, {"arrows": "to", "from": "Attention (machine learning)", "reason": "Attention mechanisms were initially popularized and widely adopted in the field of Neural Machine Translation (NMT). They address the limitations of earlier sequence-to-sequence models by allowing the decoder to focus on relevant parts of the input sentence during translation. Attention significantly improved the performance of NMT systems.", "similarity": 0.8, "to": "Neural machine translation", "width": 1}, {"arrows": "to", "from": "Computational linguistics", "reason": "NLP is a closely related field that focuses on enabling computers to understand, interpret, and generate human language. Computational linguistics provides the theoretical foundations and computational tools for NLP.", "similarity": 0.9, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Computational linguistics", "reason": "Cognitive science is the interdisciplinary study of the mind and its processes. Computational linguistics contributes to cognitive science by providing computational models of language processing, which can help us understand how humans understand and produce language.", "similarity": 0.6, "to": "Cognitive science", "width": 1}, {"arrows": "to", "from": "Natural language processing", "reason": "Computational linguistics is a closely related field that uses computational techniques to analyze and process natural language. It focuses on the formal modeling of language and the development of algorithms for language understanding and generation, sharing many of the same goals and methods as NLP.", "similarity": 0.9, "to": "Computational linguistics", "width": 1}, {"arrows": "to", "from": "Natural language processing", "reason": "Machine learning is a core technology used in many NLP tasks. Modern NLP heavily relies on machine learning algorithms, particularly deep learning, for tasks like text classification, machine translation, and sentiment analysis. Machine learning provides the tools and techniques for NLP systems to learn from data and improve their performance.", "similarity": 0.85, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Natural language processing", "reason": "NLP is a subfield of AI focused on enabling computers to understand, interpret, and generate human language. It\u0027s a key component in building intelligent systems that can interact with humans in a natural and intuitive way. NLP contributes to the broader goal of creating machines that can perform tasks that typically require human intelligence.", "similarity": 0.8, "to": "Artificial intelligence", "width": 1}, {"arrows": "to", "from": "Natural language processing", "reason": "Text mining, also known as text data mining, is the process of extracting valuable information and knowledge from unstructured text data. It uses NLP techniques to analyze text and identify patterns, trends, and relationships. Text mining is often used for tasks like sentiment analysis, topic modeling, and information retrieval, which are also common applications of NLP.", "similarity": 0.75, "to": "Text mining", "width": 1}, {"arrows": "to", "from": "Natural language processing", "reason": "Speech recognition, also known as automatic speech recognition (ASR), is the process of converting spoken language into text. It is closely related to NLP because the output of speech recognition systems is often used as input for NLP tasks. Furthermore, many of the techniques used in speech recognition, such as acoustic modeling and language modeling, are also used in NLP.", "similarity": 0.7, "to": "Speech recognition", "width": 1}, {"arrows": "to", "from": "Generative model", "reason": "Discriminative models are the counterpart to generative models. Both are machine learning approaches, but discriminative models learn the conditional probability distribution P(y|x), while generative models learn the joint probability distribution P(x, y). They are often compared and contrasted in the context of classification and regression tasks.", "similarity": 0.85, "to": "Discriminative model", "width": 1}, {"arrows": "to", "from": "Generative model", "reason": "Variational autoencoders (VAEs) are a type of generative model, specifically a probabilistic directed graphical model. They learn a latent space representation of the data and can then generate new samples by sampling from this latent space and decoding it. They are a concrete implementation of generative modeling using neural networks.", "similarity": 0.8, "to": "Variational autoencoder", "width": 1}, {"arrows": "to", "from": "Generative model", "reason": "Generative adversarial networks (GANs) are another type of generative model that uses a system of two neural networks (a generator and a discriminator) to learn the data distribution and generate new samples. They are a popular and powerful approach to generative modeling, particularly for image generation.", "similarity": 0.75, "to": "Generative adversarial network", "width": 1}, {"arrows": "to", "from": "Generative model", "reason": "Autoregressive models predict future values based on past values. In the context of generative modeling, they can be used to generate sequences of data, such as text or audio, by predicting the next element in the sequence based on the previous elements. They model the conditional probability of each element given the preceding elements.", "similarity": 0.7, "to": "Autoregressive model", "width": 1}, {"arrows": "to", "from": "Generative model", "reason": "Markov chains are stochastic models that describe a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. They can be used as generative models to simulate sequences of states, where each state is generated based on the transition probabilities from the previous state. Hidden Markov Models (HMMs) are a specific type of Markov model often used for generative sequence modeling.", "similarity": 0.65, "to": "Markov chain", "width": 1}, {"arrows": "to", "from": "Sequence-to-sequence model", "reason": "Neural machine translation is a primary application of sequence-to-sequence models, using them to translate text from one language to another. It shares the core architecture and training methodologies.", "similarity": 0.9, "to": "Neural machine translation", "width": 1}, {"arrows": "to", "from": "Sequence-to-sequence model", "reason": "Attention mechanisms are frequently integrated into sequence-to-sequence models to improve performance, particularly in handling long sequences. They allow the decoder to focus on relevant parts of the input sequence when generating the output.", "similarity": 0.75, "to": "Attention (machine learning)", "width": 1}, {"arrows": "to", "from": "Convolutional neural network", "reason": "Convolutional Neural Networks (CNNs) are a fundamental type of deep learning architecture. Deep learning encompasses a broader range of neural network architectures, but CNNs are a core component and often used as a building block in more complex deep learning models.", "similarity": 0.85, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Convolutional neural network", "reason": "CNNs are a specific type of artificial neural network. They share the same underlying principles of interconnected nodes (neurons) and learnable weights, but CNNs are specialized for processing grid-like data such as images or audio through the use of convolutional layers.", "similarity": 0.8, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "BERT (language model)", "reason": "BERT is based on the Transformer architecture. The Transformer provides the foundational building blocks for BERT\u0027s self-attention mechanism and overall structure.", "similarity": 0.95, "to": "Transformer (machine learning model)", "width": 1}, {"arrows": "to", "from": "BERT (language model)", "reason": "BERT is a prominent model in the field of NLP, designed to solve various NLP tasks such as text classification, question answering, and sentiment analysis.", "similarity": 0.8, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "BERT (language model)", "reason": "GPT-3 is another large language model that, like BERT, leverages the Transformer architecture and is used for various NLP tasks. Both models represent significant advancements in language understanding and generation, although they differ in architecture and training objectives.", "similarity": 0.75, "to": "GPT-3", "width": 1}, {"arrows": "to", "from": "Deep learning", "reason": "Deep learning is a subset of neural networks, specifically those with multiple layers (deep neural networks). They share the same fundamental building blocks (neurons, weights, activation functions) and learning paradigms (backpropagation).", "similarity": 0.9, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "Deep learning", "reason": "Deep learning is a subfield of machine learning. Both involve algorithms that learn from data without explicit programming. Deep learning provides a specific approach to machine learning, often excelling in complex pattern recognition tasks.", "similarity": 0.8, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Deep learning", "reason": "Deep learning excels at representation learning, automatically discovering useful features from raw data. This is a core goal of representation learning, and deep learning provides powerful tools to achieve it.", "similarity": 0.75, "to": "Representation learning", "width": 1}, {"arrows": "to", "from": "Deep learning", "reason": "Backpropagation is a key algorithm used to train deep neural networks. It\u0027s the primary method for adjusting the weights of the network based on the error in its predictions. While not exclusive to deep learning, it\u0027s essential for its success.", "similarity": 0.7, "to": "Backpropagation", "width": 1}, {"arrows": "to", "from": "Deep learning", "reason": "Convolutional Neural Networks (CNNs) are a specific type of deep neural network particularly well-suited for processing data with a grid-like topology, such as images. They are a very common and successful application of deep learning.", "similarity": 0.7, "to": "Convolutional neural network", "width": 1}, {"arrows": "to", "from": "Large language model", "reason": "Large language models are almost exclusively based on the Transformer architecture. Transformers provide the architectural foundation for LLMs\u0027 ability to process sequential data and generate text.", "similarity": 0.95, "to": "Transformer (machine learning model)", "width": 1}, {"arrows": "to", "from": "Large language model", "reason": "Large language models are a key technology within the field of Natural Language Processing. They are used to perform many NLP tasks, such as text generation, translation, and question answering.", "similarity": 0.85, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Large language model", "reason": "Large language models are a type of deep learning model, utilizing deep neural networks with many layers to learn complex patterns from data.", "similarity": 0.8, "to": "Deep learning", "width": 1}, {"arrows": "to", "from": "Large language model", "reason": "Large language models are generative models, meaning they are trained to generate new data (text) that is similar to the data they were trained on.", "similarity": 0.75, "to": "Generative model", "width": 1}, {"arrows": "to", "from": "Large language model", "reason": "Large language models are a specific type of neural network, characterized by their large size and training on massive datasets. They leverage the principles of neural networks for learning and prediction.", "similarity": 0.7, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "GPT-3", "reason": "GPT-3 is a prominent example of a large language model. It shares the core characteristics of being trained on massive datasets of text and code to generate human-quality text.", "similarity": 0.95, "to": "Large language model", "width": 1}, {"arrows": "to", "from": "GPT-3", "reason": "GPT-3\u0027s architecture is based on the Transformer model. The Transformer architecture is fundamental to its ability to process and generate text effectively.", "similarity": 0.9, "to": "Transformer (machine learning model)", "width": 1}, {"arrows": "to", "from": "GPT-3", "reason": "GPT-3 is a generative model, meaning it\u0027s designed to generate new content (text, code, etc.) rather than simply classifying or predicting existing data. This generative capability is a defining feature.", "similarity": 0.85, "to": "Generative model", "width": 1}, {"arrows": "to", "from": "GPT-3", "reason": "GPT-3 is a type of artificial neural network, specifically a deep neural network. It leverages the principles of neural networks to learn patterns and relationships in data.", "similarity": 0.8, "to": "Artificial neural network", "width": 1}, {"arrows": "to", "from": "GPT-3", "reason": "GPT-3 is a significant advancement in the field of natural language processing (NLP). It demonstrates state-of-the-art performance in various NLP tasks, such as text generation, translation, and question answering.", "similarity": 0.75, "to": "Natural language processing", "width": 1}, {"arrows": "to", "from": "Representation learning", "reason": "Representation learning is a subfield of machine learning focused on automatically discovering useful representations of data that make it easier to learn predictive models. It addresses the feature engineering bottleneck in traditional machine learning.", "similarity": 0.85, "to": "Machine learning", "width": 1}, {"arrows": "to", "from": "Representation learning", "reason": "Deep learning is a specific type of representation learning that uses deep neural networks with multiple layers to learn hierarchical representations of data. Many state-of-the-art representation learning techniques are based on deep learning architectures.", "similarity": 0.75, "to": "Deep learning", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.03,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+                  // make a custom popup
+                      var popup = document.createElement("div");
+                      popup.className = 'popup';
+                      popupTimeout = null;
+                      popup.addEventListener('mouseover', function () {
+                          console.log(popup)
+                          if (popupTimeout !== null) {
+                              clearTimeout(popupTimeout);
+                              popupTimeout = null;
+                          }
+                      });
+                      popup.addEventListener('mouseout', function () {
+                          if (popupTimeout === null) {
+                              hidePopup();
+                          }
+                      });
+                      container.appendChild(popup);
+
+
+                      // use the popup event to show
+                      network.on("showPopup", function (params) {
+                          showPopup(params);
+                      });
+
+                      // use the hide event to hide it
+                      network.on("hidePopup", function (params) {
+                          hidePopup();
+                      });
+
+                      // hiding the popup through css
+                      function hidePopup() {
+                          popupTimeout = setTimeout(function () { popup.style.display = 'none'; }, 500);
+                      }
+
+                      // showing the popup
+                      function showPopup(nodeId) {
+                          // get the data from the vis.DataSet
+                          var nodeData = nodes.get([nodeId]);
+                          popup.innerHTML = nodeData[0].title;
+
+                          // get the position of the node
+                          var posCanvas = network.getPositions([nodeId])[nodeId];
+
+                          // get the bounding box of the node
+                          var boundingBox = network.getBoundingBox(nodeId);
+
+                          //position tooltip:
+                          posCanvas.x = posCanvas.x + 0.5 * (boundingBox.right - boundingBox.left);
+
+                          // convert coordinates to the DOM space
+                          var posDOM = network.canvasToDOM(posCanvas);
+
+                          // Give it an offset
+                          posDOM.x += 10;
+                          posDOM.y -= 20;
+
+                          // show and place the tooltip.
+                          popup.style.display = 'block';
+                          popup.style.top = posDOM.y + 'px';
+                          popup.style.left = posDOM.x + 'px';
+                      }
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

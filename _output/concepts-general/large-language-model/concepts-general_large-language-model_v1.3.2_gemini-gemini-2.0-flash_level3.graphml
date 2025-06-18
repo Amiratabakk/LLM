@@ -1,0 +1,1975 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d15" for="edge" attr.name="width" attr.type="long"/>
+<key id="d14" for="edge" attr.name="reason" attr.type="string"/>
+<key id="d13" for="edge" attr.name="similarity" attr.type="double"/>
+<key id="d12" for="node" attr.name="size" attr.type="long"/>
+<key id="d11" for="node" attr.name="group" attr.type="long"/>
+<key id="d10" for="node" attr.name="title" attr.type="string"/>
+<key id="d9" for="node" attr.name="label" attr.type="string"/>
+<key id="d8" for="node" attr.name="node_count" attr.type="long"/>
+<key id="d7" for="node" attr.name="processed" attr.type="long"/>
+<key id="d6" for="node" attr.name="wikipedia_content" attr.type="string"/>
+<key id="d5" for="node" attr.name="wikipedia_resp_code" attr.type="long"/>
+<key id="d4" for="node" attr.name="wikipedia_normalized" attr.type="string"/>
+<key id="d3" for="node" attr.name="wikipedia_canonical" attr.type="string"/>
+<key id="d2" for="node" attr.name="wikipedia_link" attr.type="string"/>
+<key id="d1" for="node" attr.name="level" attr.type="long"/>
+<key id="d0" for="node" attr.name="name" attr.type="string"/>
+<graph edgedefault="directed"><node id="Large language model">
+  <data key="d0">Large language model</data>
+  <data key="d1">1</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Large_language_model</data>
+  <data key="d3">Large_language_model</data>
+  <data key="d4">Large language model</data>
+  <data key="d5">200</data>
+  <data key="d6">A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation.</data>
+  <data key="d7">2</data>
+  <data key="d8">0</data>
+  <data key="d9">Large language model</data>
+  <data key="d10">0. &lt;a href='https://en.wikipedia.org/wiki/Large_language_model' target='_blank'&gt;Large language model&lt;/a&gt;&lt;br /&gt;A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation.&lt;br /&gt;[200, G1, L1, PR]</data>
+  <data key="d11">1</data>
+  <data key="d12">10</data>
+</node>
+<node id="Transformer (machine learning model)">
+  <data key="d0">Transformer (machine learning model)</data>
+  <data key="d1">2</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)</data>
+  <data key="d3">Transformer_(deep_learning_architecture)</data>
+  <data key="d4">Transformer (deep learning architecture)</data>
+  <data key="d5">200</data>
+  <data key="d6">The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis</data>
+  <data key="d7">2</data>
+  <data key="d8">1</data>
+  <data key="d9">Transformer (machine learning model)</data>
+  <data key="d10">1. &lt;a href='https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)' target='_blank'&gt;Transformer (machine learning model)&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)' target='_blank'&gt;Transformer (deep learning architecture)&lt;/a&gt;&lt;br /&gt;The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis&lt;br /&gt;[200, G2, L2, PR]</data>
+  <data key="d11">2</data>
+  <data key="d12">10</data>
+</node>
+<node id="Natural language processing">
+  <data key="d0">Natural Language Processing</data>
+  <data key="d1">2</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Natural_language_processing</data>
+  <data key="d3">Natural_language_processing</data>
+  <data key="d4">Natural language processing</data>
+  <data key="d5">200</data>
+  <data key="d6">Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.</data>
+  <data key="d7">2</data>
+  <data key="d8">2</data>
+  <data key="d9">Natural language processing</data>
+  <data key="d10">2. &lt;a href='https://en.wikipedia.org/wiki/Natural_language_processing' target='_blank'&gt;Natural language processing&lt;/a&gt;&lt;br /&gt;Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.&lt;br /&gt;[200, G2, L2, PR]</data>
+  <data key="d11">2</data>
+  <data key="d12">10</data>
+</node>
+<node id="Deep learning">
+  <data key="d0">Deep Learning</data>
+  <data key="d1">2</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Deep_learning</data>
+  <data key="d3">Deep_learning</data>
+  <data key="d4">Deep learning</data>
+  <data key="d5">200</data>
+  <data key="d6">Deep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and "training" them to process data. The adjective "deep" refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised.</data>
+  <data key="d7">2</data>
+  <data key="d8">3</data>
+  <data key="d9">Deep learning</data>
+  <data key="d10">3. &lt;a href='https://en.wikipedia.org/wiki/Deep_learning' target='_blank'&gt;Deep learning&lt;/a&gt;&lt;br /&gt;Deep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and "training" them to process data. The adjective "deep" refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised.&lt;br /&gt;[200, G2, L2, PR]</data>
+  <data key="d11">2</data>
+  <data key="d12">10</data>
+</node>
+<node id="Generative model">
+  <data key="d0">Generative model</data>
+  <data key="d1">2</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Generative_model</data>
+  <data key="d3">Generative_model</data>
+  <data key="d4">Generative model</data>
+  <data key="d5">200</data>
+  <data key="d6">In statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to "generate" random instances (outcomes</data>
+  <data key="d7">2</data>
+  <data key="d8">4</data>
+  <data key="d9">Generative model</data>
+  <data key="d10">4. &lt;a href='https://en.wikipedia.org/wiki/Generative_model' target='_blank'&gt;Generative model&lt;/a&gt;&lt;br /&gt;In statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to "generate" random instances (outcomes&lt;br /&gt;[200, G2, L2, PR]</data>
+  <data key="d11">2</data>
+  <data key="d12">10</data>
+</node>
+<node id="Artificial neural network">
+  <data key="d0">Neural network</data>
+  <data key="d1">2</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Artificial_neural_network</data>
+  <data key="d3">Neural_network_(machine_learning)</data>
+  <data key="d4">Neural network (machine learning)</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks.</data>
+  <data key="d7">2</data>
+  <data key="d8">5</data>
+  <data key="d9">Artificial neural network</data>
+  <data key="d10">5. &lt;a href='https://en.wikipedia.org/wiki/Artificial_neural_network' target='_blank'&gt;Artificial neural network&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Neural_network_(machine_learning)' target='_blank'&gt;Neural network (machine learning)&lt;/a&gt;&lt;br /&gt;In machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks.&lt;br /&gt;[200, G2, L2, PR]</data>
+  <data key="d11">2</data>
+  <data key="d12">10</data>
+</node>
+<node id="Attention (machine learning)">
+  <data key="d0">Attention Mechanism</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Attention_(machine_learning)</data>
+  <data key="d3">Attention_(machine_learning)</data>
+  <data key="d4">Attention (machine learning)</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by "soft" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size.</data>
+  <data key="d7">2</data>
+  <data key="d8">6</data>
+  <data key="d9">Attention (machine learning)</data>
+  <data key="d10">6. &lt;a href='https://en.wikipedia.org/wiki/Attention_(machine_learning)' target='_blank'&gt;Attention (machine learning)&lt;/a&gt;&lt;br /&gt;In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by "soft" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Neural machine translation">
+  <data key="d0">Neural Machine Translation</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Neural_machine_translation</data>
+  <data key="d3">Neural_machine_translation</data>
+  <data key="d4">Neural machine translation</data>
+  <data key="d5">200</data>
+  <data key="d6">Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.</data>
+  <data key="d7">2</data>
+  <data key="d8">7</data>
+  <data key="d9">Neural machine translation</data>
+  <data key="d10">7. &lt;a href='https://en.wikipedia.org/wiki/Neural_machine_translation' target='_blank'&gt;Neural machine translation&lt;/a&gt;&lt;br /&gt;Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Sequence-to-sequence model">
+  <data key="d0">Sequence-to-Sequence Model</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Sequence-to-sequence_model</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">2</data>
+  <data key="d8">8</data>
+  <data key="d9">Sequence-to-sequence model</data>
+  <data key="d10">8. &lt;a href='https://en.wikipedia.org/wiki/Sequence-to-sequence_model' target='_blank'&gt;Sequence-to-sequence model&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L3, PR]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="BERT (language model)">
+  <data key="d0">BERT (Bidirectional Encoder Representations from Transformers)</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/BERT_(language_model)</data>
+  <data key="d3">BERT_(language_model)</data>
+  <data key="d4">BERT (language model)</data>
+  <data key="d5">200</data>
+  <data key="d6"> 
+Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.</data>
+  <data key="d7">2</data>
+  <data key="d8">9</data>
+  <data key="d9">BERT (language model)</data>
+  <data key="d10">9. &lt;a href='https://en.wikipedia.org/wiki/BERT_(language_model)' target='_blank'&gt;BERT (language model)&lt;/a&gt;&lt;br /&gt; 
+Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="GPT-3">
+  <data key="d0">GPT (Generative Pre-trained Transformer)</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/GPT-3</data>
+  <data key="d3">GPT-3</data>
+  <data key="d4">GPT-3</data>
+  <data key="d5">200</data>
+  <data key="d6">Generative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020.</data>
+  <data key="d7">2</data>
+  <data key="d8">10</data>
+  <data key="d9">GPT-3</data>
+  <data key="d10">10. &lt;a href='https://en.wikipedia.org/wiki/GPT-3' target='_blank'&gt;GPT-3&lt;/a&gt;&lt;br /&gt;Generative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Computational linguistics">
+  <data key="d0">Computational Linguistics</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Computational_linguistics</data>
+  <data key="d3">Computational_linguistics</data>
+  <data key="d4">Computational linguistics</data>
+  <data key="d5">200</data>
+  <data key="d6">Computational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math</data>
+  <data key="d7">2</data>
+  <data key="d8">11</data>
+  <data key="d9">Computational linguistics</data>
+  <data key="d10">11. &lt;a href='https://en.wikipedia.org/wiki/Computational_linguistics' target='_blank'&gt;Computational linguistics&lt;/a&gt;&lt;br /&gt;Computational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Machine learning">
+  <data key="d0">Machine Learning</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Machine_learning</data>
+  <data key="d3">Machine_learning</data>
+  <data key="d4">Machine learning</data>
+  <data key="d5">200</data>
+  <data key="d6">Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.</data>
+  <data key="d7">2</data>
+  <data key="d8">12</data>
+  <data key="d9">Machine learning</data>
+  <data key="d10">12. &lt;a href='https://en.wikipedia.org/wiki/Machine_learning' target='_blank'&gt;Machine learning&lt;/a&gt;&lt;br /&gt;Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Artificial intelligence">
+  <data key="d0">Artificial Intelligence</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Artificial_intelligence</data>
+  <data key="d3">Artificial_intelligence</data>
+  <data key="d4">Artificial intelligence</data>
+  <data key="d5">200</data>
+  <data key="d6">Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.</data>
+  <data key="d7">2</data>
+  <data key="d8">13</data>
+  <data key="d9">Artificial intelligence</data>
+  <data key="d10">13. &lt;a href='https://en.wikipedia.org/wiki/Artificial_intelligence' target='_blank'&gt;Artificial intelligence&lt;/a&gt;&lt;br /&gt;Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Text mining">
+  <data key="d0">Text Mining</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Text_mining</data>
+  <data key="d3">Text_mining</data>
+  <data key="d4">Text mining</data>
+  <data key="d5">200</data>
+  <data key="d6">Text mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves "the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources." Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al.</data>
+  <data key="d7">2</data>
+  <data key="d8">14</data>
+  <data key="d9">Text mining</data>
+  <data key="d10">14. &lt;a href='https://en.wikipedia.org/wiki/Text_mining' target='_blank'&gt;Text mining&lt;/a&gt;&lt;br /&gt;Text mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves "the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources." Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Speech recognition">
+  <data key="d0">Speech Recognition</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Speech_recognition</data>
+  <data key="d3">Speech_recognition</data>
+  <data key="d4">Speech recognition</data>
+  <data key="d5">200</data>
+  <data key="d6">
+Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.</data>
+  <data key="d7">2</data>
+  <data key="d8">15</data>
+  <data key="d9">Speech recognition</data>
+  <data key="d10">15. &lt;a href='https://en.wikipedia.org/wiki/Speech_recognition' target='_blank'&gt;Speech recognition&lt;/a&gt;&lt;br /&gt;
+Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Representation learning">
+  <data key="d0">Representation Learning</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Representation_learning</data>
+  <data key="d3">Feature_learning</data>
+  <data key="d4">Feature learning</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task.</data>
+  <data key="d7">2</data>
+  <data key="d8">16</data>
+  <data key="d9">Representation learning</data>
+  <data key="d10">16. &lt;a href='https://en.wikipedia.org/wiki/Representation_learning' target='_blank'&gt;Representation learning&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Feature_learning' target='_blank'&gt;Feature learning&lt;/a&gt;&lt;br /&gt;In machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Backpropagation">
+  <data key="d0">Backpropagation</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Backpropagation</data>
+  <data key="d3">Backpropagation</data>
+  <data key="d4">Backpropagation</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates.</data>
+  <data key="d7">2</data>
+  <data key="d8">17</data>
+  <data key="d9">Backpropagation</data>
+  <data key="d10">17. &lt;a href='https://en.wikipedia.org/wiki/Backpropagation' target='_blank'&gt;Backpropagation&lt;/a&gt;&lt;br /&gt;In machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Convolutional neural network">
+  <data key="d0">Convolutional Neural Network</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Convolutional_neural_network</data>
+  <data key="d3">Convolutional_neural_network</data>
+  <data key="d4">Convolutional neural network</data>
+  <data key="d5">200</data>
+  <data key="d6">A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced—in some cases—by newer deep learning architectures such as t</data>
+  <data key="d7">2</data>
+  <data key="d8">18</data>
+  <data key="d9">Convolutional neural network</data>
+  <data key="d10">18. &lt;a href='https://en.wikipedia.org/wiki/Convolutional_neural_network' target='_blank'&gt;Convolutional neural network&lt;/a&gt;&lt;br /&gt;A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced—in some cases—by newer deep learning architectures such as t&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Discriminative model">
+  <data key="d0">Discriminative model</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Discriminative_model</data>
+  <data key="d3">Discriminative_model</data>
+  <data key="d4">Discriminative model</data>
+  <data key="d5">200</data>
+  <data key="d6">Discriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints.</data>
+  <data key="d7">2</data>
+  <data key="d8">19</data>
+  <data key="d9">Discriminative model</data>
+  <data key="d10">19. &lt;a href='https://en.wikipedia.org/wiki/Discriminative_model' target='_blank'&gt;Discriminative model&lt;/a&gt;&lt;br /&gt;Discriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Variational autoencoder">
+  <data key="d0">Variational autoencoder</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Variational_autoencoder</data>
+  <data key="d3">Variational_autoencoder</data>
+  <data key="d4">Variational autoencoder</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods.</data>
+  <data key="d7">2</data>
+  <data key="d8">20</data>
+  <data key="d9">Variational autoencoder</data>
+  <data key="d10">20. &lt;a href='https://en.wikipedia.org/wiki/Variational_autoencoder' target='_blank'&gt;Variational autoencoder&lt;/a&gt;&lt;br /&gt;In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Generative adversarial network">
+  <data key="d0">Generative adversarial network</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Generative_adversarial_network</data>
+  <data key="d3">Generative_adversarial_network</data>
+  <data key="d4">Generative adversarial network</data>
+  <data key="d5">200</data>
+  <data key="d6">A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent's gain is another agent's loss.</data>
+  <data key="d7">2</data>
+  <data key="d8">21</data>
+  <data key="d9">Generative adversarial network</data>
+  <data key="d10">21. &lt;a href='https://en.wikipedia.org/wiki/Generative_adversarial_network' target='_blank'&gt;Generative adversarial network&lt;/a&gt;&lt;br /&gt;A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent's gain is another agent's loss.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Autoregressive model">
+  <data key="d0">Autoregressive model</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Autoregressive_model</data>
+  <data key="d3">Autoregressive_model</data>
+  <data key="d4">Autoregressive model</data>
+  <data key="d5">200</data>
+  <data key="d6">In statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w</data>
+  <data key="d7">2</data>
+  <data key="d8">22</data>
+  <data key="d9">Autoregressive model</data>
+  <data key="d10">22. &lt;a href='https://en.wikipedia.org/wiki/Autoregressive_model' target='_blank'&gt;Autoregressive model&lt;/a&gt;&lt;br /&gt;In statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Markov chain">
+  <data key="d0">Markov chain</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Markov_chain</data>
+  <data key="d3">Markov_chain</data>
+  <data key="d4">Markov chain</data>
+  <data key="d5">200</data>
+  <data key="d6">In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, "What happens next depends only on the state of affairs now." A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a</data>
+  <data key="d7">2</data>
+  <data key="d8">23</data>
+  <data key="d9">Markov chain</data>
+  <data key="d10">23. &lt;a href='https://en.wikipedia.org/wiki/Markov_chain' target='_blank'&gt;Markov chain&lt;/a&gt;&lt;br /&gt;In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, "What happens next depends only on the state of affairs now." A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Connectionism">
+  <data key="d0">Connectionism</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Connectionism</data>
+  <data key="d3">Connectionism</data>
+  <data key="d4">Connectionism</data>
+  <data key="d5">200</data>
+  <data key="d6">Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.</data>
+  <data key="d7">2</data>
+  <data key="d8">24</data>
+  <data key="d9">Connectionism</data>
+  <data key="d10">24. &lt;a href='https://en.wikipedia.org/wiki/Connectionism' target='_blank'&gt;Connectionism&lt;/a&gt;&lt;br /&gt;Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Computational neuroscience">
+  <data key="d0">Computational neuroscience</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Computational_neuroscience</data>
+  <data key="d3">Computational_neuroscience</data>
+  <data key="d4">Computational neuroscience</data>
+  <data key="d5">200</data>
+  <data key="d6">Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.</data>
+  <data key="d7">2</data>
+  <data key="d8">25</data>
+  <data key="d9">Computational neuroscience</data>
+  <data key="d10">25. &lt;a href='https://en.wikipedia.org/wiki/Computational_neuroscience' target='_blank'&gt;Computational neuroscience&lt;/a&gt;&lt;br /&gt;Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Cognitive science">
+  <data key="d0">Cognitive science</data>
+  <data key="d1">3</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Cognitive_science</data>
+  <data key="d3">Cognitive_science</data>
+  <data key="d4">Cognitive science</data>
+  <data key="d5">200</data>
+  <data key="d6">Cognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp</data>
+  <data key="d7">2</data>
+  <data key="d8">26</data>
+  <data key="d9">Cognitive science</data>
+  <data key="d10">26. &lt;a href='https://en.wikipedia.org/wiki/Cognitive_science' target='_blank'&gt;Cognitive science&lt;/a&gt;&lt;br /&gt;Cognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp&lt;br /&gt;[200, G3, L3, PR]</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+</node>
+<node id="Self-Attention">
+  <data key="d0">Self-Attention</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Self-Attention</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">0</data>
+  <data key="d8">27</data>
+  <data key="d9">Self-Attention</data>
+  <data key="d10">27. &lt;a href='https://en.wikipedia.org/wiki/Self-Attention' target='_blank'&gt;Self-Attention&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L4, UN]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="Sequence-to-sequence learning">
+  <data key="d0">Sequence-to-sequence learning</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Sequence-to-sequence_learning</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">0</data>
+  <data key="d8">28</data>
+  <data key="d9">Sequence-to-sequence learning</data>
+  <data key="d10">28. &lt;a href='https://en.wikipedia.org/wiki/Sequence-to-sequence_learning' target='_blank'&gt;Sequence-to-sequence learning&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L4, UN]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="Memory network">
+  <data key="d0">Memory Networks</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Memory_network</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">0</data>
+  <data key="d8">29</data>
+  <data key="d9">Memory network</data>
+  <data key="d10">29. &lt;a href='https://en.wikipedia.org/wiki/Memory_network' target='_blank'&gt;Memory network&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L4, UN]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="Machine translation">
+  <data key="d0">Machine translation</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Machine_translation</data>
+  <data key="d3">Machine_translation</data>
+  <data key="d4">Machine translation</data>
+  <data key="d5">200</data>
+  <data key="d6">Machine translation is use of computational techniques to translate text or speech from one language to another, including the contextual, idiomatic and pragmatic nuances of both languages.</data>
+  <data key="d7">0</data>
+  <data key="d8">30</data>
+  <data key="d9">Machine translation</data>
+  <data key="d10">30. &lt;a href='https://en.wikipedia.org/wiki/Machine_translation' target='_blank'&gt;Machine translation&lt;/a&gt;&lt;br /&gt;Machine translation is use of computational techniques to translate text or speech from one language to another, including the contextual, idiomatic and pragmatic nuances of both languages.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Recurrent neural network">
+  <data key="d0">Recurrent neural network</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Recurrent_neural_network</data>
+  <data key="d3">Recurrent_neural_network</data>
+  <data key="d4">Recurrent neural network</data>
+  <data key="d5">200</data>
+  <data key="d6">Recurrent neural networks (RNNs) are a class of artificial neural networks designed for processing sequential data, such as text, speech, and time series, where the order of elements is important. Unlike feedforward neural networks, which process inputs independently, RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next time step. This enables RNNs to capture temporal dependencies and patterns within sequences.</data>
+  <data key="d7">0</data>
+  <data key="d8">31</data>
+  <data key="d9">Recurrent neural network</data>
+  <data key="d10">31. &lt;a href='https://en.wikipedia.org/wiki/Recurrent_neural_network' target='_blank'&gt;Recurrent neural network&lt;/a&gt;&lt;br /&gt;Recurrent neural networks (RNNs) are a class of artificial neural networks designed for processing sequential data, such as text, speech, and time series, where the order of elements is important. Unlike feedforward neural networks, which process inputs independently, RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next time step. This enables RNNs to capture temporal dependencies and patterns within sequences.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Encoder-decoder model">
+  <data key="d0">Encoder-decoder model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Encoder-decoder_model</data>
+  <data key="d3">Transformer_(deep_learning_architecture)</data>
+  <data key="d4">Transformer (deep learning architecture)</data>
+  <data key="d5">200</data>
+  <data key="d6">The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis</data>
+  <data key="d7">0</data>
+  <data key="d8">32</data>
+  <data key="d9">Encoder-decoder model</data>
+  <data key="d10">32. &lt;a href='https://en.wikipedia.org/wiki/Encoder-decoder_model' target='_blank'&gt;Encoder-decoder model&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)' target='_blank'&gt;Transformer (deep learning architecture)&lt;/a&gt;&lt;br /&gt;The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Automatic summarization">
+  <data key="d0">Text summarization</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Automatic_summarization</data>
+  <data key="d3">Automatic_summarization</data>
+  <data key="d4">Automatic summarization</data>
+  <data key="d5">200</data>
+  <data key="d6">Automatic summarization is the process of shortening a set of data computationally, to create a subset that represents the most important or relevant information within the original content. Artificial intelligence algorithms are commonly developed and employed to achieve this, specialized for different types of data.</data>
+  <data key="d7">0</data>
+  <data key="d8">33</data>
+  <data key="d9">Automatic summarization</data>
+  <data key="d10">33. &lt;a href='https://en.wikipedia.org/wiki/Automatic_summarization' target='_blank'&gt;Automatic summarization&lt;/a&gt;&lt;br /&gt;Automatic summarization is the process of shortening a set of data computationally, to create a subset that represents the most important or relevant information within the original content. Artificial intelligence algorithms are commonly developed and employed to achieve this, specialized for different types of data.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Word embedding">
+  <data key="d0">Word embedding</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Word_embedding</data>
+  <data key="d3">Word_embedding</data>
+  <data key="d4">Word embedding</data>
+  <data key="d5">200</data>
+  <data key="d6">In natural language processing, a word embedding is a representation of a word. The embedding is used in text analysis. Typically, the representation is a real-valued vector that encodes the meaning of the word in such a way that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings can be obtained using language modeling and feature learning techniques, where words or phrases from the vocabulary are mapped to vectors of real numbers.</data>
+  <data key="d7">0</data>
+  <data key="d8">34</data>
+  <data key="d9">Word embedding</data>
+  <data key="d10">34. &lt;a href='https://en.wikipedia.org/wiki/Word_embedding' target='_blank'&gt;Word embedding&lt;/a&gt;&lt;br /&gt;In natural language processing, a word embedding is a representation of a word. The embedding is used in text analysis. Typically, the representation is a real-valued vector that encodes the meaning of the word in such a way that the words that are closer in the vector space are expected to be similar in meaning. Word embeddings can be obtained using language modeling and feature learning techniques, where words or phrases from the vocabulary are mapped to vectors of real numbers.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Masked language model">
+  <data key="d0">Masked language model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Masked_language_model</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">0</data>
+  <data key="d8">35</data>
+  <data key="d9">Masked language model</data>
+  <data key="d10">35. &lt;a href='https://en.wikipedia.org/wiki/Masked_language_model' target='_blank'&gt;Masked language model&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L4, UN]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="Language technology">
+  <data key="d0">Language Technology</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Language_technology</data>
+  <data key="d3">Language_technology</data>
+  <data key="d4">Language technology</data>
+  <data key="d5">200</data>
+  <data key="d6">Language technology, often called human language technology (HLT), studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. Working with language technology often requires broad knowledge not only about linguistics but also about computer science. It consists of natural language processing (NLP) and computational linguistics (CL) on the one hand, many application oriented aspects of these, and more low-level aspects such as</data>
+  <data key="d7">0</data>
+  <data key="d8">36</data>
+  <data key="d9">Language technology</data>
+  <data key="d10">36. &lt;a href='https://en.wikipedia.org/wiki/Language_technology' target='_blank'&gt;Language technology&lt;/a&gt;&lt;br /&gt;Language technology, often called human language technology (HLT), studies methods of how computer programs or electronic devices can analyze, produce, modify or respond to human texts and speech. Working with language technology often requires broad knowledge not only about linguistics but also about computer science. It consists of natural language processing (NLP) and computational linguistics (CL) on the one hand, many application oriented aspects of these, and more low-level aspects such as&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Corpus linguistics">
+  <data key="d0">Corpus Linguistics</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Corpus_linguistics</data>
+  <data key="d3">Corpus_linguistics</data>
+  <data key="d4">Corpus linguistics</data>
+  <data key="d5">200</data>
+  <data key="d6">
+Corpus linguistics is an empirical method for the study of language by way of a text corpus. Corpora are balanced, often stratified collections of authentic, "real world", text of speech or writing that aim to represent a given linguistic variety. Today, corpora are generally machine-readable data collections.</data>
+  <data key="d7">0</data>
+  <data key="d8">37</data>
+  <data key="d9">Corpus linguistics</data>
+  <data key="d10">37. &lt;a href='https://en.wikipedia.org/wiki/Corpus_linguistics' target='_blank'&gt;Corpus linguistics&lt;/a&gt;&lt;br /&gt;
+Corpus linguistics is an empirical method for the study of language by way of a text corpus. Corpora are balanced, often stratified collections of authentic, "real world", text of speech or writing that aim to represent a given linguistic variety. Today, corpora are generally machine-readable data collections.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Data mining">
+  <data key="d0">Data Mining</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Data_mining</data>
+  <data key="d3">Data_mining</data>
+  <data key="d4">Data mining</data>
+  <data key="d5">200</data>
+  <data key="d6">Data mining is the process of extracting and finding patterns in massive data sets involving methods at the intersection of machine learning, statistics, and database systems. Data mining is an interdisciplinary subfield of computer science and statistics with an overall goal of extracting information from a data set and transforming the information into a comprehensible structure for further use. Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD. Aside f</data>
+  <data key="d7">0</data>
+  <data key="d8">38</data>
+  <data key="d9">Data mining</data>
+  <data key="d10">38. &lt;a href='https://en.wikipedia.org/wiki/Data_mining' target='_blank'&gt;Data mining&lt;/a&gt;&lt;br /&gt;Data mining is the process of extracting and finding patterns in massive data sets involving methods at the intersection of machine learning, statistics, and database systems. Data mining is an interdisciplinary subfield of computer science and statistics with an overall goal of extracting information from a data set and transforming the information into a comprehensible structure for further use. Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD. Aside f&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Statistical learning">
+  <data key="d0">Statistical Learning</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Statistical_learning</data>
+  <data key="d3">Machine_learning</data>
+  <data key="d4">Machine learning</data>
+  <data key="d5">200</data>
+  <data key="d6">Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.</data>
+  <data key="d7">0</data>
+  <data key="d8">39</data>
+  <data key="d9">Statistical learning</data>
+  <data key="d10">39. &lt;a href='https://en.wikipedia.org/wiki/Statistical_learning' target='_blank'&gt;Statistical learning&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Machine_learning' target='_blank'&gt;Machine learning&lt;/a&gt;&lt;br /&gt;Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Pattern recognition">
+  <data key="d0">Pattern Recognition</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Pattern_recognition</data>
+  <data key="d3">Pattern_recognition</data>
+  <data key="d4">Pattern recognition</data>
+  <data key="d5">200</data>
+  <data key="d6">Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data. While similar, pattern recognition (PR) is not to be confused with pattern machines (PM) which may possess PR capabilities but their primary function is to distinguish and create emergent patterns. PR has applications in statistical data analysis, signal processing, image analysis, information retrieval, bioinformatics, data compression, computer graphics and machine learning. Pattern re</data>
+  <data key="d7">0</data>
+  <data key="d8">40</data>
+  <data key="d9">Pattern recognition</data>
+  <data key="d10">40. &lt;a href='https://en.wikipedia.org/wiki/Pattern_recognition' target='_blank'&gt;Pattern recognition&lt;/a&gt;&lt;br /&gt;Pattern recognition is the task of assigning a class to an observation based on patterns extracted from data. While similar, pattern recognition (PR) is not to be confused with pattern machines (PM) which may possess PR capabilities but their primary function is to distinguish and create emergent patterns. PR has applications in statistical data analysis, signal processing, image analysis, information retrieval, bioinformatics, data compression, computer graphics and machine learning. Pattern re&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Robotics">
+  <data key="d0">Robotics</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Robotics</data>
+  <data key="d3">Robotics</data>
+  <data key="d4">Robotics</data>
+  <data key="d5">200</data>
+  <data key="d6">Robotics is the interdisciplinary study and practice of the design, construction, operation, and use of robots.</data>
+  <data key="d7">0</data>
+  <data key="d8">41</data>
+  <data key="d9">Robotics</data>
+  <data key="d10">41. &lt;a href='https://en.wikipedia.org/wiki/Robotics' target='_blank'&gt;Robotics&lt;/a&gt;&lt;br /&gt;Robotics is the interdisciplinary study and practice of the design, construction, operation, and use of robots.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Cognitive computing">
+  <data key="d0">Cognitive Computing</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Cognitive_computing</data>
+  <data key="d3">Cognitive_computing</data>
+  <data key="d4">Cognitive computing</data>
+  <data key="d5">200</data>
+  <data key="d6">Cognitive computing refers to technology platforms that, broadly speaking, are based on the scientific disciplines of artificial intelligence and signal processing. These platforms encompass machine learning, reasoning, natural language processing, speech recognition and vision, human–computer interaction, dialog and narrative generation, among other technologies.</data>
+  <data key="d7">0</data>
+  <data key="d8">42</data>
+  <data key="d9">Cognitive computing</data>
+  <data key="d10">42. &lt;a href='https://en.wikipedia.org/wiki/Cognitive_computing' target='_blank'&gt;Cognitive computing&lt;/a&gt;&lt;br /&gt;Cognitive computing refers to technology platforms that, broadly speaking, are based on the scientific disciplines of artificial intelligence and signal processing. These platforms encompass machine learning, reasoning, natural language processing, speech recognition and vision, human–computer interaction, dialog and narrative generation, among other technologies.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Information retrieval">
+  <data key="d0">Information Retrieval</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Information_retrieval</data>
+  <data key="d3">Information_retrieval</data>
+  <data key="d4">Information retrieval</data>
+  <data key="d5">200</data>
+  <data key="d6">Information retrieval (IR) in computing and information science is the task of identifying and retrieving information system resources that are relevant to an information need. The information need can be specified in the form of a search query. In the case of document retrieval, queries can be based on full-text or other content-based indexing. Information retrieval is the science of searching for information in a document, searching for documents themselves, and also searching for the metadata</data>
+  <data key="d7">0</data>
+  <data key="d8">43</data>
+  <data key="d9">Information retrieval</data>
+  <data key="d10">43. &lt;a href='https://en.wikipedia.org/wiki/Information_retrieval' target='_blank'&gt;Information retrieval&lt;/a&gt;&lt;br /&gt;Information retrieval (IR) in computing and information science is the task of identifying and retrieving information system resources that are relevant to an information need. The information need can be specified in the form of a search query. In the case of document retrieval, queries can be based on full-text or other content-based indexing. Information retrieval is the science of searching for information in a document, searching for documents themselves, and also searching for the metadata&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Automatic speech recognition">
+  <data key="d0">Automatic speech recognition</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Automatic_speech_recognition</data>
+  <data key="d3">Speech_recognition</data>
+  <data key="d4">Speech recognition</data>
+  <data key="d5">200</data>
+  <data key="d6">
+Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.</data>
+  <data key="d7">0</data>
+  <data key="d8">44</data>
+  <data key="d9">Automatic speech recognition</data>
+  <data key="d10">44. &lt;a href='https://en.wikipedia.org/wiki/Automatic_speech_recognition' target='_blank'&gt;Automatic speech recognition&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Speech_recognition' target='_blank'&gt;Speech recognition&lt;/a&gt;&lt;br /&gt;
+Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Voice user interface">
+  <data key="d0">Voice User Interface</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Voice_user_interface</data>
+  <data key="d3">Voice_user_interface</data>
+  <data key="d4">Voice user interface</data>
+  <data key="d5">200</data>
+  <data key="d6">A voice-user interface (VUI) enables spoken human interaction with computers, using speech recognition to understand spoken commands and answer questions, and typically text to speech to play a reply. A voice command device is a device controlled with a voice user interface.</data>
+  <data key="d7">0</data>
+  <data key="d8">45</data>
+  <data key="d9">Voice user interface</data>
+  <data key="d10">45. &lt;a href='https://en.wikipedia.org/wiki/Voice_user_interface' target='_blank'&gt;Voice user interface&lt;/a&gt;&lt;br /&gt;A voice-user interface (VUI) enables spoken human interaction with computers, using speech recognition to understand spoken commands and answer questions, and typically text to speech to play a reply. A voice command device is a device controlled with a voice user interface.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Speaker recognition">
+  <data key="d0">Speaker recognition</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Speaker_recognition</data>
+  <data key="d3">Speaker_recognition</data>
+  <data key="d4">Speaker recognition</data>
+  <data key="d5">200</data>
+  <data key="d6">
+Speaker recognition is the identification of a person from characteristics of voices. It is used to answer the question "Who is speaking?" The term voice recognition can refer to speaker recognition or speech recognition. Speaker verification contrasts with identification, and speaker recognition differs from speaker diarisation.</data>
+  <data key="d7">0</data>
+  <data key="d8">46</data>
+  <data key="d9">Speaker recognition</data>
+  <data key="d10">46. &lt;a href='https://en.wikipedia.org/wiki/Speaker_recognition' target='_blank'&gt;Speaker recognition&lt;/a&gt;&lt;br /&gt;
+Speaker recognition is the identification of a person from characteristics of voices. It is used to answer the question "Who is speaking?" The term voice recognition can refer to speaker recognition or speech recognition. Speaker verification contrasts with identification, and speaker recognition differs from speaker diarisation.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Acoustic phonetics">
+  <data key="d0">Acoustic Phonetics</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Acoustic_phonetics</data>
+  <data key="d3">Acoustic_phonetics</data>
+  <data key="d4">Acoustic phonetics</data>
+  <data key="d5">200</data>
+  <data key="d6">Acoustic phonetics is a subfield of phonetics, which deals with acoustic aspects of speech sounds. Acoustic phonetics investigates time domain features such as the mean squared amplitude of a waveform, its duration, its fundamental frequency, or frequency domain features such as the frequency spectrum, or even combined spectrotemporal features and the relationship of these properties to other branches of phonetics, and to abstract linguistic concepts such as phonemes, phrases, or utterances.</data>
+  <data key="d7">0</data>
+  <data key="d8">47</data>
+  <data key="d9">Acoustic phonetics</data>
+  <data key="d10">47. &lt;a href='https://en.wikipedia.org/wiki/Acoustic_phonetics' target='_blank'&gt;Acoustic phonetics&lt;/a&gt;&lt;br /&gt;Acoustic phonetics is a subfield of phonetics, which deals with acoustic aspects of speech sounds. Acoustic phonetics investigates time domain features such as the mean squared amplitude of a waveform, its duration, its fundamental frequency, or frequency domain features such as the frequency spectrum, or even combined spectrotemporal features and the relationship of these properties to other branches of phonetics, and to abstract linguistic concepts such as phonemes, phrases, or utterances.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Feature engineering">
+  <data key="d0">Feature engineering</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Feature_engineering</data>
+  <data key="d3">Feature_engineering</data>
+  <data key="d4">Feature engineering</data>
+  <data key="d5">200</data>
+  <data key="d6">Feature engineering is a preprocessing step in supervised machine learning and statistical modeling which transforms raw data into a more effective set of inputs. Each input comprises several attributes, known as features. By providing models with relevant information, feature engineering significantly enhances their predictive accuracy and decision-making capability.</data>
+  <data key="d7">0</data>
+  <data key="d8">48</data>
+  <data key="d9">Feature engineering</data>
+  <data key="d10">48. &lt;a href='https://en.wikipedia.org/wiki/Feature_engineering' target='_blank'&gt;Feature engineering&lt;/a&gt;&lt;br /&gt;Feature engineering is a preprocessing step in supervised machine learning and statistical modeling which transforms raw data into a more effective set of inputs. Each input comprises several attributes, known as features. By providing models with relevant information, feature engineering significantly enhances their predictive accuracy and decision-making capability.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Unsupervised learning">
+  <data key="d0">Unsupervised learning</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Unsupervised_learning</data>
+  <data key="d3">Unsupervised_learning</data>
+  <data key="d4">Unsupervised learning</data>
+  <data key="d5">200</data>
+  <data key="d6">Unsupervised learning is a framework in machine learning where, in contrast to supervised learning, algorithms learn patterns exclusively from unlabeled data. Other frameworks in the spectrum of supervisions include weak- or semi-supervision, where a small portion of the data is tagged, and self-supervision. Some researchers consider self-supervised learning a form of unsupervised learning.</data>
+  <data key="d7">0</data>
+  <data key="d8">49</data>
+  <data key="d9">Unsupervised learning</data>
+  <data key="d10">49. &lt;a href='https://en.wikipedia.org/wiki/Unsupervised_learning' target='_blank'&gt;Unsupervised learning&lt;/a&gt;&lt;br /&gt;Unsupervised learning is a framework in machine learning where, in contrast to supervised learning, algorithms learn patterns exclusively from unlabeled data. Other frameworks in the spectrum of supervisions include weak- or semi-supervision, where a small portion of the data is tagged, and self-supervision. Some researchers consider self-supervised learning a form of unsupervised learning.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Dimensionality reduction">
+  <data key="d0">Dimensionality reduction</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Dimensionality_reduction</data>
+  <data key="d3">Dimensionality_reduction</data>
+  <data key="d4">Dimensionality reduction</data>
+  <data key="d5">200</data>
+  <data key="d6">Dimensionality reduction, or dimension reduction, is the transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension. Working in high-dimensional spaces can be undesirable for many reasons; raw data are often sparse as a consequence of the curse of dimensionality, and analyzing the data is usually computationally intractable. Dimension</data>
+  <data key="d7">0</data>
+  <data key="d8">50</data>
+  <data key="d9">Dimensionality reduction</data>
+  <data key="d10">50. &lt;a href='https://en.wikipedia.org/wiki/Dimensionality_reduction' target='_blank'&gt;Dimensionality reduction&lt;/a&gt;&lt;br /&gt;Dimensionality reduction, or dimension reduction, is the transformation of data from a high-dimensional space into a low-dimensional space so that the low-dimensional representation retains some meaningful properties of the original data, ideally close to its intrinsic dimension. Working in high-dimensional spaces can be undesirable for many reasons; raw data are often sparse as a consequence of the curse of dimensionality, and analyzing the data is usually computationally intractable. Dimension&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Gradient descent">
+  <data key="d0">Gradient Descent</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Gradient_descent</data>
+  <data key="d3">Gradient_descent</data>
+  <data key="d4">Gradient descent</data>
+  <data key="d5">200</data>
+  <data key="d6">Gradient descent is a method for unconstrained mathematical optimization. It is a first-order iterative algorithm for minimizing a differentiable multivariate function.</data>
+  <data key="d7">0</data>
+  <data key="d8">51</data>
+  <data key="d9">Gradient descent</data>
+  <data key="d10">51. &lt;a href='https://en.wikipedia.org/wiki/Gradient_descent' target='_blank'&gt;Gradient descent&lt;/a&gt;&lt;br /&gt;Gradient descent is a method for unconstrained mathematical optimization. It is a first-order iterative algorithm for minimizing a differentiable multivariate function.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Automatic differentiation">
+  <data key="d0">Automatic Differentiation</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Automatic_differentiation</data>
+  <data key="d3">Automatic_differentiation</data>
+  <data key="d4">Automatic differentiation</data>
+  <data key="d5">200</data>
+  <data key="d6">In mathematics and computer algebra, automatic differentiation, also called algorithmic differentiation, computational differentiation, and differentiation arithmetic is a set of techniques to evaluate the partial derivative of a function specified by a computer program. Automatic differentiation is a subtle and central tool to automatize the simultaneous computation of the numerical values of arbitrarily complex functions and their derivatives with no need for the symbolic representation of the</data>
+  <data key="d7">0</data>
+  <data key="d8">52</data>
+  <data key="d9">Automatic differentiation</data>
+  <data key="d10">52. &lt;a href='https://en.wikipedia.org/wiki/Automatic_differentiation' target='_blank'&gt;Automatic differentiation&lt;/a&gt;&lt;br /&gt;In mathematics and computer algebra, automatic differentiation, also called algorithmic differentiation, computational differentiation, and differentiation arithmetic is a set of techniques to evaluate the partial derivative of a function specified by a computer program. Automatic differentiation is a subtle and central tool to automatize the simultaneous computation of the numerical values of arbitrarily complex functions and their derivatives with no need for the symbolic representation of the&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Chain rule">
+  <data key="d0">Chain Rule</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Chain_rule</data>
+  <data key="d3">Chain_rule</data>
+  <data key="d4">Chain rule</data>
+  <data key="d5">200</data>
+  <data key="d6">In calculus, the chain rule is a formula that expresses the derivative of the composition of two differentiable functions f and g in terms of the derivatives of f and g. More precisely, if  is the function such that  for every x, then the chain rule is, in Lagrange's notation,
+
+or, equivalently,
+</data>
+  <data key="d7">0</data>
+  <data key="d8">53</data>
+  <data key="d9">Chain rule</data>
+  <data key="d10">53. &lt;a href='https://en.wikipedia.org/wiki/Chain_rule' target='_blank'&gt;Chain rule&lt;/a&gt;&lt;br /&gt;In calculus, the chain rule is a formula that expresses the derivative of the composition of two differentiable functions f and g in terms of the derivatives of f and g. More precisely, if  is the function such that  for every x, then the chain rule is, in Lagrange's notation,
+
+or, equivalently,
+&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Error surface">
+  <data key="d0">Error Surface</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Error_surface</data>
+  <data key="d3"></data>
+  <data key="d4"></data>
+  <data key="d5">404</data>
+  <data key="d6"></data>
+  <data key="d7">0</data>
+  <data key="d8">54</data>
+  <data key="d9">Error surface</data>
+  <data key="d10">54. &lt;a href='https://en.wikipedia.org/wiki/Error_surface' target='_blank'&gt;Error surface&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L4, UN]</data>
+  <data key="d11">500</data>
+  <data key="d12">10</data>
+</node>
+<node id="Image recognition">
+  <data key="d0">Image recognition</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Image_recognition</data>
+  <data key="d3">Computer_vision</data>
+  <data key="d4">Computer vision</data>
+  <data key="d5">200</data>
+  <data key="d6">Computer vision tasks include methods for acquiring, processing, analyzing, and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the form of decisions. "Understanding" in this context signifies the transformation of visual images into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of sy</data>
+  <data key="d7">0</data>
+  <data key="d8">55</data>
+  <data key="d9">Image recognition</data>
+  <data key="d10">55. &lt;a href='https://en.wikipedia.org/wiki/Image_recognition' target='_blank'&gt;Image recognition&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Computer_vision' target='_blank'&gt;Computer vision&lt;/a&gt;&lt;br /&gt;Computer vision tasks include methods for acquiring, processing, analyzing, and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the form of decisions. "Understanding" in this context signifies the transformation of visual images into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of sy&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Computer vision">
+  <data key="d0">Computer vision</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Computer_vision</data>
+  <data key="d3">Computer_vision</data>
+  <data key="d4">Computer vision</data>
+  <data key="d5">200</data>
+  <data key="d6">Computer vision tasks include methods for acquiring, processing, analyzing, and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the form of decisions. "Understanding" in this context signifies the transformation of visual images into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of sy</data>
+  <data key="d7">0</data>
+  <data key="d8">56</data>
+  <data key="d9">Computer vision</data>
+  <data key="d10">56. &lt;a href='https://en.wikipedia.org/wiki/Computer_vision' target='_blank'&gt;Computer vision&lt;/a&gt;&lt;br /&gt;Computer vision tasks include methods for acquiring, processing, analyzing, and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the form of decisions. "Understanding" in this context signifies the transformation of visual images into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of sy&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Statistical classification">
+  <data key="d0">Classification</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Statistical_classification</data>
+  <data key="d3">Statistical_classification</data>
+  <data key="d4">Statistical classification</data>
+  <data key="d5">200</data>
+  <data key="d6">When classification is performed by a computer, statistical methods are normally used to develop the algorithm.</data>
+  <data key="d7">0</data>
+  <data key="d8">57</data>
+  <data key="d9">Statistical classification</data>
+  <data key="d10">57. &lt;a href='https://en.wikipedia.org/wiki/Statistical_classification' target='_blank'&gt;Statistical classification&lt;/a&gt;&lt;br /&gt;When classification is performed by a computer, statistical methods are normally used to develop the algorithm.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Logistic regression">
+  <data key="d0">Logistic regression</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Logistic_regression</data>
+  <data key="d3">Logistic_regression</data>
+  <data key="d4">Logistic regression</data>
+  <data key="d5">200</data>
+  <data key="d6">In statistics, a logistic model is a statistical model that models the log-odds of an event as a linear combination of one or more independent variables. In regression analysis, logistic regression estimates the parameters of a logistic model. In binary logistic regression there is a single binary dependent variable, coded by an indicator variable, where the two values are labeled "0" and "1", while the independent variables can each be a binary variable or a continuous variable. The correspondi</data>
+  <data key="d7">0</data>
+  <data key="d8">58</data>
+  <data key="d9">Logistic regression</data>
+  <data key="d10">58. &lt;a href='https://en.wikipedia.org/wiki/Logistic_regression' target='_blank'&gt;Logistic regression&lt;/a&gt;&lt;br /&gt;In statistics, a logistic model is a statistical model that models the log-odds of an event as a linear combination of one or more independent variables. In regression analysis, logistic regression estimates the parameters of a logistic model. In binary logistic regression there is a single binary dependent variable, coded by an indicator variable, where the two values are labeled "0" and "1", while the independent variables can each be a binary variable or a continuous variable. The correspondi&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Support vector machine">
+  <data key="d0">Support Vector Machine</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Support_vector_machine</data>
+  <data key="d3">Support_vector_machine</data>
+  <data key="d4">Support vector machine</data>
+  <data key="d5">200</data>
+  <data key="d6">In machine learning, support vector machines are supervised max-margin models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories, SVMs are one of the most studied models, being based on statistical learning frameworks of VC theory proposed by Vapnik and Chervonenkis (1974).</data>
+  <data key="d7">0</data>
+  <data key="d8">59</data>
+  <data key="d9">Support vector machine</data>
+  <data key="d10">59. &lt;a href='https://en.wikipedia.org/wiki/Support_vector_machine' target='_blank'&gt;Support vector machine&lt;/a&gt;&lt;br /&gt;In machine learning, support vector machines are supervised max-margin models with associated learning algorithms that analyze data for classification and regression analysis. Developed at AT&amp;T Bell Laboratories, SVMs are one of the most studied models, being based on statistical learning frameworks of VC theory proposed by Vapnik and Chervonenkis (1974).&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Conditional random field">
+  <data key="d0">Conditional Random Field</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Conditional_random_field</data>
+  <data key="d3">Conditional_random_field</data>
+  <data key="d4">Conditional random field</data>
+  <data key="d5">200</data>
+  <data key="d6">Conditional random fields (CRFs) are a class of statistical modeling methods often applied in pattern recognition and machine learning and used for structured prediction. Whereas a classifier predicts a label for a single sample without considering "neighbouring" samples, a CRF can take context into account. To do so, the predictions are modelled as a graphical model, which represents the presence of dependencies between the predictions. The kind of graph used depends on the application. For exa</data>
+  <data key="d7">0</data>
+  <data key="d8">60</data>
+  <data key="d9">Conditional random field</data>
+  <data key="d10">60. &lt;a href='https://en.wikipedia.org/wiki/Conditional_random_field' target='_blank'&gt;Conditional random field&lt;/a&gt;&lt;br /&gt;Conditional random fields (CRFs) are a class of statistical modeling methods often applied in pattern recognition and machine learning and used for structured prediction. Whereas a classifier predicts a label for a single sample without considering "neighbouring" samples, a CRF can take context into account. To do so, the predictions are modelled as a graphical model, which represents the presence of dependencies between the predictions. The kind of graph used depends on the application. For exa&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Autoencoder">
+  <data key="d0">Autoencoder</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Autoencoder</data>
+  <data key="d3">Autoencoder</data>
+  <data key="d4">Autoencoder</data>
+  <data key="d5">200</data>
+  <data key="d6">An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data. An autoencoder learns two functions: an encoding function that transforms the input data, and a decoding function that recreates the input data from the encoded representation. The autoencoder learns an efficient representation (encoding) for a set of data, typically for dimensionality reduction, to generate lower-dimensional embeddings for subsequent use by other machine learning algorithms.</data>
+  <data key="d7">0</data>
+  <data key="d8">61</data>
+  <data key="d9">Autoencoder</data>
+  <data key="d10">61. &lt;a href='https://en.wikipedia.org/wiki/Autoencoder' target='_blank'&gt;Autoencoder&lt;/a&gt;&lt;br /&gt;An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data. An autoencoder learns two functions: an encoding function that transforms the input data, and a decoding function that recreates the input data from the encoded representation. The autoencoder learns an efficient representation (encoding) for a set of data, typically for dimensionality reduction, to generate lower-dimensional embeddings for subsequent use by other machine learning algorithms.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Latent variable model">
+  <data key="d0">Latent variable model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Latent_variable_model</data>
+  <data key="d3">Latent_variable_model</data>
+  <data key="d4">Latent variable model</data>
+  <data key="d5">200</data>
+  <data key="d6">A latent variable model is a statistical model that relates a set of observable variables to a set of latent variables. Latent variable models are applied across a wide range of fields such as biology, computer science, and social science. Common use cases for latent variable models include applications in psychometrics, and natural language processing.</data>
+  <data key="d7">0</data>
+  <data key="d8">62</data>
+  <data key="d9">Latent variable model</data>
+  <data key="d10">62. &lt;a href='https://en.wikipedia.org/wiki/Latent_variable_model' target='_blank'&gt;Latent variable model&lt;/a&gt;&lt;br /&gt;A latent variable model is a statistical model that relates a set of observable variables to a set of latent variables. Latent variable models are applied across a wide range of fields such as biology, computer science, and social science. Common use cases for latent variable models include applications in psychometrics, and natural language processing.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Bayesian network">
+  <data key="d0">Bayesian network</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Bayesian_network</data>
+  <data key="d3">Bayesian_network</data>
+  <data key="d4">Bayesian network</data>
+  <data key="d5">200</data>
+  <data key="d6">A Bayesian network is a probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG). While it is one of several forms of causal notation, causal networks are special cases of Bayesian networks. Bayesian networks are ideal for taking an event that occurred and predicting the likelihood that any one of several possible known causes was the contributing factor. For example, a Bayesian network could represent the probabilisti</data>
+  <data key="d7">0</data>
+  <data key="d8">63</data>
+  <data key="d9">Bayesian network</data>
+  <data key="d10">63. &lt;a href='https://en.wikipedia.org/wiki/Bayesian_network' target='_blank'&gt;Bayesian network&lt;/a&gt;&lt;br /&gt;A Bayesian network is a probabilistic graphical model that represents a set of variables and their conditional dependencies via a directed acyclic graph (DAG). While it is one of several forms of causal notation, causal networks are special cases of Bayesian networks. Bayesian networks are ideal for taking an event that occurred and predicting the likelihood that any one of several possible known causes was the contributing factor. For example, a Bayesian network could represent the probabilisti&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Principal component analysis">
+  <data key="d0">Principal component analysis</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Principal_component_analysis</data>
+  <data key="d3">Principal_component_analysis</data>
+  <data key="d4">Principal component analysis</data>
+  <data key="d5">200</data>
+  <data key="d6">Principal component analysis (PCA) is a linear dimensionality reduction technique with applications in exploratory data analysis, visualization and data preprocessing.</data>
+  <data key="d7">0</data>
+  <data key="d8">64</data>
+  <data key="d9">Principal component analysis</data>
+  <data key="d10">64. &lt;a href='https://en.wikipedia.org/wiki/Principal_component_analysis' target='_blank'&gt;Principal component analysis&lt;/a&gt;&lt;br /&gt;Principal component analysis (PCA) is a linear dimensionality reduction technique with applications in exploratory data analysis, visualization and data preprocessing.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Adversarial machine learning">
+  <data key="d0">Adversarial machine learning</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Adversarial_machine_learning</data>
+  <data key="d3">Adversarial_machine_learning</data>
+  <data key="d4">Adversarial machine learning</data>
+  <data key="d5">200</data>
+  <data key="d6">Adversarial machine learning is the study of the attacks on machine learning algorithms, and of the defenses against such attacks. A survey from May 2020 revealed practitioners' common feeling for better protection of machine learning systems in industrial applications.</data>
+  <data key="d7">0</data>
+  <data key="d8">65</data>
+  <data key="d9">Adversarial machine learning</data>
+  <data key="d10">65. &lt;a href='https://en.wikipedia.org/wiki/Adversarial_machine_learning' target='_blank'&gt;Adversarial machine learning&lt;/a&gt;&lt;br /&gt;Adversarial machine learning is the study of the attacks on machine learning algorithms, and of the defenses against such attacks. A survey from May 2020 revealed practitioners' common feeling for better protection of machine learning systems in industrial applications.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Markov model">
+  <data key="d0">Markov model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Markov_model</data>
+  <data key="d3">Markov_model</data>
+  <data key="d4">Markov model</data>
+  <data key="d5">200</data>
+  <data key="d6">In probability theory, a Markov model is a stochastic model used to model pseudo-randomly changing systems. It is assumed that future states depend only on the current state, not on the events that occurred before it. Generally, this assumption enables reasoning and computation with the model that would otherwise be intractable. For this reason, in the fields of predictive modelling and probabilistic forecasting, it is desirable for a given model to exhibit the Markov property.</data>
+  <data key="d7">0</data>
+  <data key="d8">66</data>
+  <data key="d9">Markov model</data>
+  <data key="d10">66. &lt;a href='https://en.wikipedia.org/wiki/Markov_model' target='_blank'&gt;Markov model&lt;/a&gt;&lt;br /&gt;In probability theory, a Markov model is a stochastic model used to model pseudo-randomly changing systems. It is assumed that future states depend only on the current state, not on the events that occurred before it. Generally, this assumption enables reasoning and computation with the model that would otherwise be intractable. For this reason, in the fields of predictive modelling and probabilistic forecasting, it is desirable for a given model to exhibit the Markov property.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Time series analysis">
+  <data key="d0">Time series analysis</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Time_series_analysis</data>
+  <data key="d3">Time_series</data>
+  <data key="d4">Time series</data>
+  <data key="d5">200</data>
+  <data key="d6">In mathematics, a time series is a series of data points indexed in time order. Most commonly, a time series is a sequence taken at successive equally spaced points in time. Thus it is a sequence of discrete-time data. Examples of time series are heights of ocean tides, counts of sunspots, and the daily closing value of the Dow Jones Industrial Average.</data>
+  <data key="d7">0</data>
+  <data key="d8">67</data>
+  <data key="d9">Time series analysis</data>
+  <data key="d10">67. &lt;a href='https://en.wikipedia.org/wiki/Time_series_analysis' target='_blank'&gt;Time series analysis&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Time_series' target='_blank'&gt;Time series&lt;/a&gt;&lt;br /&gt;In mathematics, a time series is a series of data points indexed in time order. Most commonly, a time series is a sequence taken at successive equally spaced points in time. Thus it is a sequence of discrete-time data. Examples of time series are heights of ocean tides, counts of sunspots, and the daily closing value of the Dow Jones Industrial Average.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Moving-average model">
+  <data key="d0">Moving-average model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Moving-average_model</data>
+  <data key="d3">Moving-average_model</data>
+  <data key="d4">Moving-average model</data>
+  <data key="d5">200</data>
+  <data key="d6">In time series analysis, the moving-average model, also known as moving-average process, is a common approach for modeling univariate time series. The moving-average model specifies that the output variable is cross-correlated with a non-identical to itself random-variable.</data>
+  <data key="d7">0</data>
+  <data key="d8">68</data>
+  <data key="d9">Moving-average model</data>
+  <data key="d10">68. &lt;a href='https://en.wikipedia.org/wiki/Moving-average_model' target='_blank'&gt;Moving-average model&lt;/a&gt;&lt;br /&gt;In time series analysis, the moving-average model, also known as moving-average process, is a common approach for modeling univariate time series. The moving-average model specifies that the output variable is cross-correlated with a non-identical to itself random-variable.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Kalman filter">
+  <data key="d0">Kalman filter</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Kalman_filter</data>
+  <data key="d3">Kalman_filter</data>
+  <data key="d4">Kalman filter</data>
+  <data key="d5">200</data>
+  <data key="d6">In statistics and control theory, Kalman filtering is an algorithm that uses a series of measurements observed over time, including statistical noise and other inaccuracies, to produce estimates of unknown variables that tend to be more accurate than those based on a single measurement, by estimating a joint probability distribution over the variables for each time-step. The filter is constructed as a mean squared error minimiser, but an alternative derivation of the filter is also provided show</data>
+  <data key="d7">0</data>
+  <data key="d8">69</data>
+  <data key="d9">Kalman filter</data>
+  <data key="d10">69. &lt;a href='https://en.wikipedia.org/wiki/Kalman_filter' target='_blank'&gt;Kalman filter&lt;/a&gt;&lt;br /&gt;In statistics and control theory, Kalman filtering is an algorithm that uses a series of measurements observed over time, including statistical noise and other inaccuracies, to produce estimates of unknown variables that tend to be more accurate than those based on a single measurement, by estimating a joint probability distribution over the variables for each time-step. The filter is constructed as a mean squared error minimiser, but an alternative derivation of the filter is also provided show&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Hidden Markov model">
+  <data key="d0">Hidden Markov Model</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Hidden_Markov_model</data>
+  <data key="d3">Hidden_Markov_model</data>
+  <data key="d4">Hidden Markov model</data>
+  <data key="d5">200</data>
+  <data key="d6">A hidden Markov model (HMM) is a Markov model in which the observations are dependent on a latent Markov process. An HMM requires that there be an observable process  whose outcomes depend on the outcomes of  in a known way. Since  cannot be observed directly, the goal is to learn about state of  by observing . By definition of being a Markov model, an HMM has an additional requirement that the outcome of  at time  must be "influenced" exclusively by the outcome of  at  and that the outcomes of </data>
+  <data key="d7">0</data>
+  <data key="d8">70</data>
+  <data key="d9">Hidden Markov model</data>
+  <data key="d10">70. &lt;a href='https://en.wikipedia.org/wiki/Hidden_Markov_model' target='_blank'&gt;Hidden Markov model&lt;/a&gt;&lt;br /&gt;A hidden Markov model (HMM) is a Markov model in which the observations are dependent on a latent Markov process. An HMM requires that there be an observable process  whose outcomes depend on the outcomes of  in a known way. Since  cannot be observed directly, the goal is to learn about state of  by observing . By definition of being a Markov model, an HMM has an additional requirement that the outcome of  at time  must be "influenced" exclusively by the outcome of  at  and that the outcomes of &lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Markov process">
+  <data key="d0">Markov Process</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Markov_process</data>
+  <data key="d3">Markov_chain</data>
+  <data key="d4">Markov chain</data>
+  <data key="d5">200</data>
+  <data key="d6">In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, "What happens next depends only on the state of affairs now." A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a</data>
+  <data key="d7">0</data>
+  <data key="d8">71</data>
+  <data key="d9">Markov process</data>
+  <data key="d10">71. &lt;a href='https://en.wikipedia.org/wiki/Markov_process' target='_blank'&gt;Markov process&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Markov_chain' target='_blank'&gt;Markov chain&lt;/a&gt;&lt;br /&gt;In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, "What happens next depends only on the state of affairs now." A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Stochastic process">
+  <data key="d0">Stochastic Process</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Stochastic_process</data>
+  <data key="d3">Stochastic_process</data>
+  <data key="d4">Stochastic process</data>
+  <data key="d5">200</data>
+  <data key="d6">In probability theory and related fields, a stochastic or random process is a mathematical object usually defined as a family of random variables in a probability space, where the index of the family often has the interpretation of time. Stochastic processes are widely used as mathematical models of systems and phenomena that appear to vary in a random manner. Examples include the growth of a bacterial population, an electrical current fluctuating due to thermal noise, or the movement of a gas m</data>
+  <data key="d7">0</data>
+  <data key="d8">72</data>
+  <data key="d9">Stochastic process</data>
+  <data key="d10">72. &lt;a href='https://en.wikipedia.org/wiki/Stochastic_process' target='_blank'&gt;Stochastic process&lt;/a&gt;&lt;br /&gt;In probability theory and related fields, a stochastic or random process is a mathematical object usually defined as a family of random variables in a probability space, where the index of the family often has the interpretation of time. Stochastic processes are widely used as mathematical models of systems and phenomena that appear to vary in a random manner. Examples include the growth of a bacterial population, an electrical current fluctuating due to thermal noise, or the movement of a gas m&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Queueing theory">
+  <data key="d0">Queueing Theory</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Queueing_theory</data>
+  <data key="d3">Queueing_theory</data>
+  <data key="d4">Queueing theory</data>
+  <data key="d5">200</data>
+  <data key="d6">Queueing theory is the mathematical study of waiting lines, or queues. A queueing model is constructed so that queue lengths and waiting time can be predicted. Queueing theory is generally considered a branch of operations research because the results are often used when making business decisions about the resources needed to provide a service.</data>
+  <data key="d7">0</data>
+  <data key="d8">73</data>
+  <data key="d9">Queueing theory</data>
+  <data key="d10">73. &lt;a href='https://en.wikipedia.org/wiki/Queueing_theory' target='_blank'&gt;Queueing theory&lt;/a&gt;&lt;br /&gt;Queueing theory is the mathematical study of waiting lines, or queues. A queueing model is constructed so that queue lengths and waiting time can be predicted. Queueing theory is generally considered a branch of operations research because the results are often used when making business decisions about the resources needed to provide a service.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Parallel distributed processing">
+  <data key="d0">Parallel distributed processing</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Parallel_distributed_processing</data>
+  <data key="d3">Connectionism</data>
+  <data key="d4">Connectionism</data>
+  <data key="d5">200</data>
+  <data key="d6">Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.</data>
+  <data key="d7">0</data>
+  <data key="d8">74</data>
+  <data key="d9">Parallel distributed processing</data>
+  <data key="d10">74. &lt;a href='https://en.wikipedia.org/wiki/Parallel_distributed_processing' target='_blank'&gt;Parallel distributed processing&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Connectionism' target='_blank'&gt;Connectionism&lt;/a&gt;&lt;br /&gt;Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Cognitive psychology">
+  <data key="d0">Cognitive psychology</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Cognitive_psychology</data>
+  <data key="d3">Cognitive_psychology</data>
+  <data key="d4">Cognitive psychology</data>
+  <data key="d5">200</data>
+  <data key="d6">Cognitive psychology is the scientific study of human mental processes such as attention, language use, memory, perception, problem solving, creativity, and reasoning.
+Cognitive psychology originated in the 1960s in a break from behaviorism, which held from the 1920s to 1950s that unobservable mental processes were outside the realm of empirical science. This break came as researchers in linguistics and cybernetics, as well as applied psychology, used models of mental processing to explain human</data>
+  <data key="d7">0</data>
+  <data key="d8">75</data>
+  <data key="d9">Cognitive psychology</data>
+  <data key="d10">75. &lt;a href='https://en.wikipedia.org/wiki/Cognitive_psychology' target='_blank'&gt;Cognitive psychology&lt;/a&gt;&lt;br /&gt;Cognitive psychology is the scientific study of human mental processes such as attention, language use, memory, perception, problem solving, creativity, and reasoning.
+Cognitive psychology originated in the 1960s in a break from behaviorism, which held from the 1920s to 1950s that unobservable mental processes were outside the realm of empirical science. This break came as researchers in linguistics and cybernetics, as well as applied psychology, used models of mental processing to explain human&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Theoretical neuroscience">
+  <data key="d0">Theoretical neuroscience</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Theoretical_neuroscience</data>
+  <data key="d3">Computational_neuroscience</data>
+  <data key="d4">Computational neuroscience</data>
+  <data key="d5">200</data>
+  <data key="d6">Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.</data>
+  <data key="d7">0</data>
+  <data key="d8">76</data>
+  <data key="d9">Theoretical neuroscience</data>
+  <data key="d10">76. &lt;a href='https://en.wikipedia.org/wiki/Theoretical_neuroscience' target='_blank'&gt;Theoretical neuroscience&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Computational_neuroscience' target='_blank'&gt;Computational neuroscience&lt;/a&gt;&lt;br /&gt;Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Neuroinformatics">
+  <data key="d0">Neuroinformatics</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Neuroinformatics</data>
+  <data key="d3">Neuroinformatics</data>
+  <data key="d4">Neuroinformatics</data>
+  <data key="d5">200</data>
+  <data key="d6">Neuroinformatics is the emergent field that combines informatics and neuroscience. Neuroinformatics is related with neuroscience data and information processing by artificial neural networks. There are three main directions where neuroinformatics has to be applied:the development of computational models of the nervous system and neural processes;
+the development of tools for analyzing and modeling neuroscience data; and
+the development of tools and databases for management and sharing of neurosc</data>
+  <data key="d7">0</data>
+  <data key="d8">77</data>
+  <data key="d9">Neuroinformatics</data>
+  <data key="d10">77. &lt;a href='https://en.wikipedia.org/wiki/Neuroinformatics' target='_blank'&gt;Neuroinformatics&lt;/a&gt;&lt;br /&gt;Neuroinformatics is the emergent field that combines informatics and neuroscience. Neuroinformatics is related with neuroscience data and information processing by artificial neural networks. There are three main directions where neuroinformatics has to be applied:the development of computational models of the nervous system and neural processes;
+the development of tools for analyzing and modeling neuroscience data; and
+the development of tools and databases for management and sharing of neurosc&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Cognitive neuroscience">
+  <data key="d0">Cognitive neuroscience</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Cognitive_neuroscience</data>
+  <data key="d3">Cognitive_neuroscience</data>
+  <data key="d4">Cognitive neuroscience</data>
+  <data key="d5">200</data>
+  <data key="d6">Cognitive neuroscience is the scientific field that is concerned with the study of the biological processes and aspects that underlie cognition, with a specific focus on the neural connections in the brain which are involved in mental processes. It addresses the questions of how cognitive activities are affected or controlled by neural circuits in the brain. Cognitive neuroscience is a branch of both neuroscience and psychology, overlapping with disciplines such as behavioral neuroscience, cogni</data>
+  <data key="d7">0</data>
+  <data key="d8">78</data>
+  <data key="d9">Cognitive neuroscience</data>
+  <data key="d10">78. &lt;a href='https://en.wikipedia.org/wiki/Cognitive_neuroscience' target='_blank'&gt;Cognitive neuroscience&lt;/a&gt;&lt;br /&gt;Cognitive neuroscience is the scientific field that is concerned with the study of the biological processes and aspects that underlie cognition, with a specific focus on the neural connections in the brain which are involved in mental processes. It addresses the questions of how cognitive activities are affected or controlled by neural circuits in the brain. Cognitive neuroscience is a branch of both neuroscience and psychology, overlapping with disciplines such as behavioral neuroscience, cogni&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Mathematical neuroscience">
+  <data key="d0">Mathematical neuroscience</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Mathematical_neuroscience</data>
+  <data key="d3">Computational_neuroscience</data>
+  <data key="d4">Computational neuroscience</data>
+  <data key="d5">200</data>
+  <data key="d6">Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.</data>
+  <data key="d7">0</data>
+  <data key="d8">79</data>
+  <data key="d9">Mathematical neuroscience</data>
+  <data key="d10">79. &lt;a href='https://en.wikipedia.org/wiki/Mathematical_neuroscience' target='_blank'&gt;Mathematical neuroscience&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Computational_neuroscience' target='_blank'&gt;Computational neuroscience&lt;/a&gt;&lt;br /&gt;Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Psychology">
+  <data key="d0">Psychology</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Psychology</data>
+  <data key="d3">Psychology</data>
+  <data key="d4">Psychology</data>
+  <data key="d5">200</data>
+  <data key="d6">Psychology is the scientific study of mind and behavior. Its subject matter includes the behavior of humans and nonhumans, both conscious and unconscious phenomena, and mental processes such as thoughts, feelings, and motives. Psychology is an academic discipline of immense scope, crossing the boundaries between the natural and social sciences. Biological psychologists seek an understanding of the emergent properties of brains, linking the discipline to neuroscience. As social scientists, psycho</data>
+  <data key="d7">0</data>
+  <data key="d8">80</data>
+  <data key="d9">Psychology</data>
+  <data key="d10">80. &lt;a href='https://en.wikipedia.org/wiki/Psychology' target='_blank'&gt;Psychology&lt;/a&gt;&lt;br /&gt;Psychology is the scientific study of mind and behavior. Its subject matter includes the behavior of humans and nonhumans, both conscious and unconscious phenomena, and mental processes such as thoughts, feelings, and motives. Psychology is an academic discipline of immense scope, crossing the boundaries between the natural and social sciences. Biological psychologists seek an understanding of the emergent properties of brains, linking the discipline to neuroscience. As social scientists, psycho&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Neuroscience">
+  <data key="d0">Neuroscience</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Neuroscience</data>
+  <data key="d3">Neuroscience</data>
+  <data key="d4">Neuroscience</data>
+  <data key="d5">200</data>
+  <data key="d6">Neuroscience is the scientific study of the nervous system, its functions, and its disorders. It is a multidisciplinary science that combines physiology, anatomy, molecular biology, developmental biology, cytology, psychology, physics, computer science, chemistry, medicine, statistics, and mathematical modeling to understand the fundamental and emergent properties of neurons, glia and neural circuits. The understanding of the biological basis of learning, memory, behavior, perception, and consci</data>
+  <data key="d7">0</data>
+  <data key="d8">81</data>
+  <data key="d9">Neuroscience</data>
+  <data key="d10">81. &lt;a href='https://en.wikipedia.org/wiki/Neuroscience' target='_blank'&gt;Neuroscience&lt;/a&gt;&lt;br /&gt;Neuroscience is the scientific study of the nervous system, its functions, and its disorders. It is a multidisciplinary science that combines physiology, anatomy, molecular biology, developmental biology, cytology, psychology, physics, computer science, chemistry, medicine, statistics, and mathematical modeling to understand the fundamental and emergent properties of neurons, glia and neural circuits. The understanding of the biological basis of learning, memory, behavior, perception, and consci&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Linguistics">
+  <data key="d0">Linguistics</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Linguistics</data>
+  <data key="d3">Linguistics</data>
+  <data key="d4">Linguistics</data>
+  <data key="d5">200</data>
+  <data key="d6">Linguistics is the scientific study of language. The areas of linguistic analysis are syntax, semantics (meaning), morphology, phonetics, phonology, and pragmatics. Subdisciplines such as biolinguistics and psycholinguistics bridge many of these divisions.</data>
+  <data key="d7">0</data>
+  <data key="d8">82</data>
+  <data key="d9">Linguistics</data>
+  <data key="d10">82. &lt;a href='https://en.wikipedia.org/wiki/Linguistics' target='_blank'&gt;Linguistics&lt;/a&gt;&lt;br /&gt;Linguistics is the scientific study of language. The areas of linguistic analysis are syntax, semantics (meaning), morphology, phonetics, phonology, and pragmatics. Subdisciplines such as biolinguistics and psycholinguistics bridge many of these divisions.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<node id="Philosophy of mind">
+  <data key="d0">Philosophy of Mind</data>
+  <data key="d1">4</data>
+  <data key="d2">https://en.wikipedia.org/wiki/Philosophy_of_mind</data>
+  <data key="d3">Philosophy_of_mind</data>
+  <data key="d4">Philosophy of mind</data>
+  <data key="d5">200</data>
+  <data key="d6">Philosophy of mind is a branch of philosophy that deals with the nature of the mind and its relation to the body and the external world.</data>
+  <data key="d7">0</data>
+  <data key="d8">83</data>
+  <data key="d9">Philosophy of mind</data>
+  <data key="d10">83. &lt;a href='https://en.wikipedia.org/wiki/Philosophy_of_mind' target='_blank'&gt;Philosophy of mind&lt;/a&gt;&lt;br /&gt;Philosophy of mind is a branch of philosophy that deals with the nature of the mind and its relation to the body and the external world.&lt;br /&gt;[200, G4, L4, UN]</data>
+  <data key="d11">4</data>
+  <data key="d12">10</data>
+</node>
+<edge source="Large language model" target="Transformer (machine learning model)">
+  <data key="d13">0.95</data>
+  <data key="d14">Large language models are almost exclusively based on the Transformer architecture. Transformers provide the architectural foundation for LLMs' ability to process sequential data and generate text.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Large language model" target="Natural language processing">
+  <data key="d13">0.85</data>
+  <data key="d14">Large language models are a key technology within the field of Natural Language Processing. They are used to perform many NLP tasks, such as text generation, translation, and question answering.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Large language model" target="Deep learning">
+  <data key="d13">0.8</data>
+  <data key="d14">Large language models are a type of deep learning model, utilizing deep neural networks with many layers to learn complex patterns from data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Large language model" target="Generative model">
+  <data key="d13">0.75</data>
+  <data key="d14">Large language models are generative models, meaning they are trained to generate new data (text) that is similar to the data they were trained on.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Large language model" target="Artificial neural network">
+  <data key="d13">0.7</data>
+  <data key="d14">Large language models are a specific type of neural network, characterized by their large size and training on massive datasets. They leverage the principles of neural networks for learning and prediction.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Transformer (machine learning model)" target="Attention (machine learning)">
+  <data key="d13">0.95</data>
+  <data key="d14">The attention mechanism is the core component of the Transformer architecture. Transformers rely heavily on attention to weigh the importance of different parts of the input sequence when processing it. Without attention, the Transformer model would not function.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Transformer (machine learning model)" target="Neural machine translation">
+  <data key="d13">0.85</data>
+  <data key="d14">Transformers were initially developed to improve Neural Machine Translation (NMT) and achieved state-of-the-art results in this area. NMT is a primary application of Transformers, and many Transformer architectures are designed with translation tasks in mind.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Transformer (machine learning model)" target="Sequence-to-sequence model">
+  <data key="d13">0.8</data>
+  <data key="d14">Transformers are a type of sequence-to-sequence model, meaning they take a sequence as input and produce another sequence as output. While traditional sequence-to-sequence models often use recurrent neural networks (RNNs), Transformers offer an alternative approach using attention mechanisms.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Transformer (machine learning model)" target="BERT (language model)">
+  <data key="d13">0.9</data>
+  <data key="d14">BERT is a specific Transformer-based model designed for pre-training on large amounts of text data. It leverages the Transformer architecture to learn contextualized word embeddings, which can then be fine-tuned for various downstream tasks. BERT is a direct descendant and application of the Transformer architecture.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Transformer (machine learning model)" target="GPT-3">
+  <data key="d13">0.88</data>
+  <data key="d14">GPT is another Transformer-based model focused on generative tasks, particularly text generation. Like BERT, it is pre-trained on a massive dataset and then fine-tuned for specific applications. GPT showcases the versatility of the Transformer architecture beyond translation, demonstrating its effectiveness in language modeling and text generation.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Natural language processing" target="Computational linguistics">
+  <data key="d13">0.9</data>
+  <data key="d14">Computational linguistics is a closely related field that uses computational techniques to analyze and process natural language. It focuses on the formal modeling of language and the development of algorithms for language understanding and generation, sharing many of the same goals and methods as NLP.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Natural language processing" target="Machine learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Machine learning is a core technology used in many NLP tasks. Modern NLP heavily relies on machine learning algorithms, particularly deep learning, for tasks like text classification, machine translation, and sentiment analysis. Machine learning provides the tools and techniques for NLP systems to learn from data and improve their performance.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Natural language processing" target="Artificial intelligence">
+  <data key="d13">0.8</data>
+  <data key="d14">NLP is a subfield of AI focused on enabling computers to understand, interpret, and generate human language. It's a key component in building intelligent systems that can interact with humans in a natural and intuitive way. NLP contributes to the broader goal of creating machines that can perform tasks that typically require human intelligence.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Natural language processing" target="Text mining">
+  <data key="d13">0.75</data>
+  <data key="d14">Text mining, also known as text data mining, is the process of extracting valuable information and knowledge from unstructured text data. It uses NLP techniques to analyze text and identify patterns, trends, and relationships. Text mining is often used for tasks like sentiment analysis, topic modeling, and information retrieval, which are also common applications of NLP.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Natural language processing" target="Speech recognition">
+  <data key="d13">0.7</data>
+  <data key="d14">Speech recognition, also known as automatic speech recognition (ASR), is the process of converting spoken language into text. It is closely related to NLP because the output of speech recognition systems is often used as input for NLP tasks. Furthermore, many of the techniques used in speech recognition, such as acoustic modeling and language modeling, are also used in NLP.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Deep learning" target="Artificial neural network">
+  <data key="d13">0.9</data>
+  <data key="d14">Deep learning is a subset of neural networks, specifically those with multiple layers (deep neural networks). They share the same fundamental building blocks (neurons, weights, activation functions) and learning paradigms (backpropagation).</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Deep learning" target="Machine learning">
+  <data key="d13">0.8</data>
+  <data key="d14">Deep learning is a subfield of machine learning. Both involve algorithms that learn from data without explicit programming. Deep learning provides a specific approach to machine learning, often excelling in complex pattern recognition tasks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Deep learning" target="Representation learning">
+  <data key="d13">0.75</data>
+  <data key="d14">Deep learning excels at representation learning, automatically discovering useful features from raw data. This is a core goal of representation learning, and deep learning provides powerful tools to achieve it.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Deep learning" target="Backpropagation">
+  <data key="d13">0.7</data>
+  <data key="d14">Backpropagation is a key algorithm used to train deep neural networks. It's the primary method for adjusting the weights of the network based on the error in its predictions. While not exclusive to deep learning, it's essential for its success.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Deep learning" target="Convolutional neural network">
+  <data key="d13">0.7</data>
+  <data key="d14">Convolutional Neural Networks (CNNs) are a specific type of deep neural network particularly well-suited for processing data with a grid-like topology, such as images. They are a very common and successful application of deep learning.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative model" target="Discriminative model">
+  <data key="d13">0.85</data>
+  <data key="d14">Discriminative models are the counterpart to generative models. Both are machine learning approaches, but discriminative models learn the conditional probability distribution P(y|x), while generative models learn the joint probability distribution P(x, y). They are often compared and contrasted in the context of classification and regression tasks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative model" target="Variational autoencoder">
+  <data key="d13">0.8</data>
+  <data key="d14">Variational autoencoders (VAEs) are a type of generative model, specifically a probabilistic directed graphical model. They learn a latent space representation of the data and can then generate new samples by sampling from this latent space and decoding it. They are a concrete implementation of generative modeling using neural networks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative model" target="Generative adversarial network">
+  <data key="d13">0.75</data>
+  <data key="d14">Generative adversarial networks (GANs) are another type of generative model that uses a system of two neural networks (a generator and a discriminator) to learn the data distribution and generate new samples. They are a popular and powerful approach to generative modeling, particularly for image generation.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative model" target="Autoregressive model">
+  <data key="d13">0.7</data>
+  <data key="d14">Autoregressive models predict future values based on past values. In the context of generative modeling, they can be used to generate sequences of data, such as text or audio, by predicting the next element in the sequence based on the previous elements. They model the conditional probability of each element given the preceding elements.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative model" target="Markov chain">
+  <data key="d13">0.65</data>
+  <data key="d14">Markov chains are stochastic models that describe a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. They can be used as generative models to simulate sequences of states, where each state is generated based on the transition probabilities from the previous state. Hidden Markov Models (HMMs) are a specific type of Markov model often used for generative sequence modeling.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial neural network" target="Deep learning">
+  <data key="d13">0.95</data>
+  <data key="d14">Deep learning is a subfield of machine learning based on artificial neural networks with representation learning. Deep learning architectures such as deep neural networks, recurrent neural networks, convolutional neural networks and transformers have been applied to fields including computer vision, speech recognition, natural language processing, machine translation, bioinformatics, drug design, medical image analysis, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial neural network" target="Machine learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Artificial neural networks are a core component of many machine learning algorithms. Machine learning is a broader field that encompasses various techniques for enabling computers to learn from data without explicit programming, and neural networks are a powerful tool within this field.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial neural network" target="Connectionism">
+  <data key="d13">0.8</data>
+  <data key="d14">Connectionism is an approach in the fields of cognitive science and artificial intelligence that uses artificial neural networks to explain mental phenomena. It emphasizes the interconnectedness of simple units (neurons) to produce complex behavior, mirroring the structure and function of the brain.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial neural network" target="Computational neuroscience">
+  <data key="d13">0.75</data>
+  <data key="d14">Computational neuroscience uses mathematical models and computer simulations to study the nervous system. Artificial neural networks are often used as simplified models of biological neural networks to understand how the brain processes information.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial neural network" target="Cognitive science">
+  <data key="d13">0.7</data>
+  <data key="d14">Cognitive science is the interdisciplinary study of mind and intelligence, which includes philosophy, neuroscience, artificial intelligence, linguistics, anthropology, psychology. Artificial neural networks are used as models of cognition and learning within cognitive science to understand how the brain performs cognitive tasks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Attention (machine learning)" target="Transformer (machine learning model)">
+  <data key="d13">0.95</data>
+  <data key="d14">Transformers heavily rely on attention mechanisms as their core building block. The self-attention mechanism within transformers allows the model to weigh the importance of different parts of the input sequence when processing it, making it a direct application and extension of the attention concept.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Attention (machine learning)" target="Self-Attention">
+  <data key="d13">0.9</data>
+  <data key="d14">Self-attention is a specific type of attention mechanism where the attention is applied to relate different positions of the *same* input sequence. It's a fundamental component of transformers and a key concept in understanding how attention is used to capture relationships within data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Attention (machine learning)" target="Neural machine translation">
+  <data key="d13">0.8</data>
+  <data key="d14">Attention mechanisms were initially popularized and widely adopted in the field of Neural Machine Translation (NMT). They address the limitations of earlier sequence-to-sequence models by allowing the decoder to focus on relevant parts of the input sentence during translation. Attention significantly improved the performance of NMT systems.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Attention (machine learning)" target="Sequence-to-sequence learning">
+  <data key="d13">0.75</data>
+  <data key="d14">Attention mechanisms are often used within sequence-to-sequence models to improve their ability to handle long-range dependencies. While sequence-to-sequence models can exist without attention, the integration of attention significantly enhances their performance, especially in tasks like machine translation and text summarization.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Attention (machine learning)" target="Memory network">
+  <data key="d13">0.7</data>
+  <data key="d14">Memory Networks use an attention mechanism to select relevant information from an external memory store. This allows the model to reason over a larger context and improve performance on tasks that require long-term memory. The attention mechanism is crucial for retrieving the most relevant memories.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Neural machine translation" target="Machine translation">
+  <data key="d13">0.95</data>
+  <data key="d14">Machine translation is the broader field that neural machine translation falls under. NMT is a specific approach to machine translation.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Neural machine translation" target="Sequence-to-sequence learning">
+  <data key="d13">0.9</data>
+  <data key="d14">NMT models are typically based on sequence-to-sequence learning architectures, which are designed to map one sequence to another. This is the fundamental architecture used in NMT.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Neural machine translation" target="Deep learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Neural machine translation relies heavily on deep learning techniques, particularly recurrent neural networks (RNNs) and transformers, to learn complex patterns in language.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Neural machine translation" target="Recurrent neural network">
+  <data key="d13">0.8</data>
+  <data key="d14">RNNs, especially LSTMs and GRUs, were foundational to early NMT models for handling sequential data. While transformers are now more common, RNNs remain relevant in the history and understanding of NMT.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Neural machine translation" target="Transformer (machine learning model)">
+  <data key="d13">0.8</data>
+  <data key="d14">The Transformer architecture has become the dominant approach in NMT, significantly improving performance compared to RNN-based models. It addresses limitations of RNNs in capturing long-range dependencies.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Sequence-to-sequence model" target="Neural machine translation">
+  <data key="d13">0.9</data>
+  <data key="d14">Neural machine translation is a primary application of sequence-to-sequence models, using them to translate text from one language to another. It shares the core architecture and training methodologies.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Sequence-to-sequence model" target="Encoder-decoder model">
+  <data key="d13">0.85</data>
+  <data key="d14">Sequence-to-sequence models are a specific type of encoder-decoder model. The encoder-decoder architecture is fundamental to sequence-to-sequence learning, providing the framework for mapping input sequences to output sequences.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Sequence-to-sequence model" target="Recurrent neural network">
+  <data key="d13">0.8</data>
+  <data key="d14">Recurrent Neural Networks (RNNs), especially LSTMs and GRUs, are commonly used as the building blocks within sequence-to-sequence models to handle sequential data. They are crucial for processing variable-length input and output sequences.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Sequence-to-sequence model" target="Attention (machine learning)">
+  <data key="d13">0.75</data>
+  <data key="d14">Attention mechanisms are frequently integrated into sequence-to-sequence models to improve performance, particularly in handling long sequences. They allow the decoder to focus on relevant parts of the input sequence when generating the output.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Sequence-to-sequence model" target="Automatic summarization">
+  <data key="d13">0.7</data>
+  <data key="d14">Text summarization, especially abstractive summarization, is another application of sequence-to-sequence models. The model learns to generate a concise summary of a longer text, similar to machine translation in its sequence transformation task.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="BERT (language model)" target="Transformer (machine learning model)">
+  <data key="d13">0.95</data>
+  <data key="d14">BERT is based on the Transformer architecture. The Transformer provides the foundational building blocks for BERT's self-attention mechanism and overall structure.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="BERT (language model)" target="Word embedding">
+  <data key="d13">0.85</data>
+  <data key="d14">BERT utilizes word embeddings to represent words as vectors, capturing semantic relationships. Word embeddings are a crucial component for BERT's understanding of language.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="BERT (language model)" target="Natural language processing">
+  <data key="d13">0.8</data>
+  <data key="d14">BERT is a prominent model in the field of NLP, designed to solve various NLP tasks such as text classification, question answering, and sentiment analysis.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="BERT (language model)" target="Masked language model">
+  <data key="d13">0.9</data>
+  <data key="d14">BERT is pre-trained using a masked language modeling objective, where the model learns to predict masked words in a sentence. This is a core training technique for BERT.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="BERT (language model)" target="GPT-3">
+  <data key="d13">0.75</data>
+  <data key="d14">GPT-3 is another large language model that, like BERT, leverages the Transformer architecture and is used for various NLP tasks. Both models represent significant advancements in language understanding and generation, although they differ in architecture and training objectives.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="GPT-3" target="Large language model">
+  <data key="d13">0.95</data>
+  <data key="d14">GPT-3 is a prominent example of a large language model. It shares the core characteristics of being trained on massive datasets of text and code to generate human-quality text.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="GPT-3" target="Transformer (machine learning model)">
+  <data key="d13">0.9</data>
+  <data key="d14">GPT-3's architecture is based on the Transformer model. The Transformer architecture is fundamental to its ability to process and generate text effectively.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="GPT-3" target="Generative model">
+  <data key="d13">0.85</data>
+  <data key="d14">GPT-3 is a generative model, meaning it's designed to generate new content (text, code, etc.) rather than simply classifying or predicting existing data. This generative capability is a defining feature.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="GPT-3" target="Artificial neural network">
+  <data key="d13">0.8</data>
+  <data key="d14">GPT-3 is a type of artificial neural network, specifically a deep neural network. It leverages the principles of neural networks to learn patterns and relationships in data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="GPT-3" target="Natural language processing">
+  <data key="d13">0.75</data>
+  <data key="d14">GPT-3 is a significant advancement in the field of natural language processing (NLP). It demonstrates state-of-the-art performance in various NLP tasks, such as text generation, translation, and question answering.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational linguistics" target="Natural language processing">
+  <data key="d13">0.9</data>
+  <data key="d14">NLP is a closely related field that focuses on enabling computers to understand, interpret, and generate human language. Computational linguistics provides the theoretical foundations and computational tools for NLP.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational linguistics" target="Language technology">
+  <data key="d13">0.8</data>
+  <data key="d14">Language technology is a broader term encompassing computational linguistics and NLP, along with other areas like speech recognition and machine translation. It represents the application of computational techniques to language-related problems.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational linguistics" target="Machine translation">
+  <data key="d13">0.7</data>
+  <data key="d14">Machine translation, the automatic translation of text from one language to another, is a major application area of computational linguistics. It relies heavily on computational linguistic techniques for parsing, semantic analysis, and language generation.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational linguistics" target="Corpus linguistics">
+  <data key="d13">0.65</data>
+  <data key="d14">Corpus linguistics involves the study of language based on large collections of real-world text (corpora). Computational linguistics provides the tools and techniques for analyzing these corpora, extracting linguistic patterns, and building statistical language models.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational linguistics" target="Cognitive science">
+  <data key="d13">0.6</data>
+  <data key="d14">Cognitive science is the interdisciplinary study of the mind and its processes. Computational linguistics contributes to cognitive science by providing computational models of language processing, which can help us understand how humans understand and produce language.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Machine learning" target="Artificial intelligence">
+  <data key="d13">0.9</data>
+  <data key="d14">Machine learning is a subfield of artificial intelligence. AI is the broader concept of creating intelligent agents, while machine learning focuses on enabling systems to learn from data without explicit programming. Many AI systems leverage machine learning techniques.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Machine learning" target="Data mining">
+  <data key="d13">0.8</data>
+  <data key="d14">Data mining and machine learning share the goal of extracting knowledge and patterns from data. Many data mining techniques are based on machine learning algorithms. However, data mining often involves a broader range of tasks, including data cleaning, transformation, and visualization, while machine learning focuses more specifically on model building and prediction.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Machine learning" target="Statistical learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Statistical learning is closely related to machine learning, with significant overlap in techniques and goals. Both fields focus on building models from data to make predictions or inferences. Statistical learning emphasizes the statistical foundations of these models, while machine learning often focuses more on algorithmic efficiency and performance.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Machine learning" target="Deep learning">
+  <data key="d13">0.75</data>
+  <data key="d14">Deep learning is a specific type of machine learning that uses artificial neural networks with multiple layers (deep neural networks) to analyze data. It has achieved significant success in areas like image recognition, natural language processing, and speech recognition. Deep learning is a subset of machine learning.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Machine learning" target="Pattern recognition">
+  <data key="d13">0.7</data>
+  <data key="d14">Pattern recognition is the process of identifying regularities or patterns in data. Machine learning algorithms are frequently used for pattern recognition tasks, such as image classification, object detection, and speech recognition. Pattern recognition provides the problem domain for many machine learning applications.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial intelligence" target="Machine learning">
+  <data key="d13">0.9</data>
+  <data key="d14">Machine learning is a core subfield of AI focused on enabling systems to learn from data without explicit programming. It's a primary method for achieving AI.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial intelligence" target="Deep learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Deep learning is a subfield of machine learning that uses artificial neural networks with multiple layers to analyze data and is a very popular and effective approach to AI.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial intelligence" target="Robotics">
+  <data key="d13">0.75</data>
+  <data key="d14">Robotics often incorporates AI techniques to enable robots to perform complex tasks autonomously, such as navigation, object recognition, and manipulation. AI provides the 'brains' for many robots.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial intelligence" target="Natural language processing">
+  <data key="d13">0.7</data>
+  <data key="d14">NLP is a branch of AI that deals with enabling computers to understand, interpret, and generate human language. It's crucial for applications like chatbots, machine translation, and sentiment analysis.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Artificial intelligence" target="Cognitive computing">
+  <data key="d13">0.65</data>
+  <data key="d14">Cognitive computing aims to simulate human thought processes in a computerized model. It overlaps significantly with AI, focusing on tasks that require human-like intelligence, such as problem-solving and decision-making.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Text mining" target="Natural language processing">
+  <data key="d13">0.9</data>
+  <data key="d14">NLP is a core enabling technology for text mining, providing the tools to parse, understand, and extract meaning from text. Text mining often relies on NLP techniques for tasks like tokenization, part-of-speech tagging, and named entity recognition.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Text mining" target="Information retrieval">
+  <data key="d13">0.8</data>
+  <data key="d14">Both text mining and information retrieval deal with large amounts of text data. While information retrieval focuses on finding relevant documents, text mining goes a step further to discover patterns and knowledge within those documents. Text mining often uses information retrieval techniques to pre-select relevant documents.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Text mining" target="Data mining">
+  <data key="d13">0.75</data>
+  <data key="d14">Text mining is a subfield of data mining, specifically focused on extracting knowledge from textual data. The general principles and techniques of data mining, such as clustering, classification, and association rule mining, are applicable to text data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Text mining" target="Machine learning">
+  <data key="d13">0.7</data>
+  <data key="d14">Machine learning algorithms are widely used in text mining for tasks such as text classification, sentiment analysis, and topic modeling. Text mining often involves training machine learning models on text data to automate the process of knowledge discovery.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Text mining" target="Computational linguistics">
+  <data key="d13">0.65</data>
+  <data key="d14">Computational linguistics provides the theoretical and computational foundations for understanding and processing human language. Text mining benefits from the linguistic insights and tools developed in computational linguistics, particularly for tasks like semantic analysis and discourse analysis.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Speech recognition" target="Automatic speech recognition">
+  <data key="d13">0.95</data>
+  <data key="d14">Automatic speech recognition (ASR) is essentially synonymous with speech recognition, often used interchangeably. It refers to the process of a computer converting spoken words into text.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Speech recognition" target="Natural language processing">
+  <data key="d13">0.85</data>
+  <data key="d14">Speech recognition is a crucial component of Natural Language Processing (NLP). NLP deals with enabling computers to understand and process human language, and speech recognition provides the initial step of converting spoken language into a machine-readable format for further analysis by NLP algorithms.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Speech recognition" target="Voice user interface">
+  <data key="d13">0.8</data>
+  <data key="d14">Speech recognition is a core technology enabling Voice User Interfaces (VUIs). VUIs allow users to interact with systems using voice commands, and speech recognition is the technology that interprets those commands.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Speech recognition" target="Speaker recognition">
+  <data key="d13">0.75</data>
+  <data key="d14">While speech recognition focuses on *what* is being said, speaker recognition focuses on *who* is speaking. Both are related to analyzing audio of speech, but have different goals. Speaker recognition can be used in conjunction with speech recognition to improve accuracy or for authentication purposes.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Speech recognition" target="Acoustic phonetics">
+  <data key="d13">0.7</data>
+  <data key="d14">Acoustic phonetics is the study of the physical properties of speech sounds. Speech recognition systems rely heavily on the principles of acoustic phonetics to analyze and model the acoustic signals of speech and map them to phonemes and words.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Representation learning" target="Machine learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Representation learning is a subfield of machine learning focused on automatically discovering useful representations of data that make it easier to learn predictive models. It addresses the feature engineering bottleneck in traditional machine learning.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Representation learning" target="Feature engineering">
+  <data key="d13">0.8</data>
+  <data key="d14">Representation learning aims to automate the process of feature engineering, which is the manual creation of features from raw data. It seeks to learn these features directly from the data itself, reducing the need for human intervention.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Representation learning" target="Deep learning">
+  <data key="d13">0.75</data>
+  <data key="d14">Deep learning is a specific type of representation learning that uses deep neural networks with multiple layers to learn hierarchical representations of data. Many state-of-the-art representation learning techniques are based on deep learning architectures.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Representation learning" target="Unsupervised learning">
+  <data key="d13">0.7</data>
+  <data key="d14">A significant portion of representation learning falls under unsupervised learning, where the goal is to learn useful representations from unlabeled data. Techniques like autoencoders and contrastive learning are used to discover underlying structure and patterns in the data without explicit supervision.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Representation learning" target="Dimensionality reduction">
+  <data key="d13">0.65</data>
+  <data key="d14">Representation learning often involves reducing the dimensionality of data while preserving important information. Techniques like Principal Component Analysis (PCA) and autoencoders can be used to learn lower-dimensional representations that capture the essential features of the data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Backpropagation" target="Gradient descent">
+  <data key="d13">0.9</data>
+  <data key="d14">Backpropagation is a specific application of gradient descent used to train artificial neural networks. It calculates the gradient of the loss function with respect to the weights of the network, which is then used to update the weights in the direction that minimizes the loss.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Backpropagation" target="Automatic differentiation">
+  <data key="d13">0.85</data>
+  <data key="d14">Backpropagation is a special case of automatic differentiation (specifically, reverse accumulation) applied to neural networks. Automatic differentiation provides a general framework for computing derivatives of complex functions, and backpropagation leverages this to efficiently compute gradients in deep learning models.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Backpropagation" target="Chain rule">
+  <data key="d13">0.8</data>
+  <data key="d14">Backpropagation relies heavily on the chain rule of calculus to compute the gradients through multiple layers of a neural network. The chain rule allows for the decomposition of the derivative of a composite function into the product of derivatives of its constituent functions.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Backpropagation" target="Artificial neural network">
+  <data key="d13">0.75</data>
+  <data key="d14">Backpropagation is the primary algorithm used to train most feedforward neural networks. It's intrinsically linked to the architecture and learning process of these networks, enabling them to learn complex patterns from data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Backpropagation" target="Error surface">
+  <data key="d13">0.7</data>
+  <data key="d14">Backpropagation aims to navigate the error surface (also known as the loss landscape) of a neural network to find the minimum, which corresponds to the optimal set of weights. Understanding the properties of the error surface is crucial for understanding the challenges and limitations of backpropagation.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Convolutional neural network" target="Deep learning">
+  <data key="d13">0.85</data>
+  <data key="d14">Convolutional Neural Networks (CNNs) are a fundamental type of deep learning architecture. Deep learning encompasses a broader range of neural network architectures, but CNNs are a core component and often used as a building block in more complex deep learning models.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Convolutional neural network" target="Artificial neural network">
+  <data key="d13">0.8</data>
+  <data key="d14">CNNs are a specific type of artificial neural network. They share the same underlying principles of interconnected nodes (neurons) and learnable weights, but CNNs are specialized for processing grid-like data such as images or audio through the use of convolutional layers.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Convolutional neural network" target="Image recognition">
+  <data key="d13">0.75</data>
+  <data key="d14">Image recognition is a primary application area for CNNs. CNNs have achieved state-of-the-art results in various image recognition tasks, including image classification, object detection, and image segmentation. The architecture of CNNs is specifically designed to extract relevant features from images.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Convolutional neural network" target="Computer vision">
+  <data key="d13">0.7</data>
+  <data key="d14">CNNs are a crucial tool in the field of computer vision. They enable computers to 'see' and interpret images and videos. Many computer vision tasks, such as object detection, image segmentation, and image classification, heavily rely on CNNs.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Convolutional neural network" target="Recurrent neural network">
+  <data key="d13">0.6</data>
+  <data key="d14">While structurally different, both CNNs and RNNs are important types of neural networks used in deep learning. They both learn complex patterns from data, but CNNs are better suited for spatial data (like images) and RNNs are better suited for sequential data (like text or time series). They represent different approaches to feature extraction and pattern recognition within the broader field of neural networks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Discriminative model" target="Generative model">
+  <data key="d13">0.9</data>
+  <data key="d14">Generative and discriminative models are two main approaches to statistical classification. They both aim to classify data, but differ in their approach. Generative models learn the joint probability distribution, while discriminative models learn the conditional probability distribution directly. They are often contrasted with each other.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Discriminative model" target="Statistical classification">
+  <data key="d13">0.8</data>
+  <data key="d14">Discriminative models are primarily used for classification tasks. They directly learn the decision boundary between classes, making them a core component of classification algorithms.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Discriminative model" target="Logistic regression">
+  <data key="d13">0.75</data>
+  <data key="d14">Logistic regression is a classic example of a discriminative model. It directly models the probability of a class given the input features, without modeling the underlying data distribution.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Discriminative model" target="Support vector machine">
+  <data key="d13">0.75</data>
+  <data key="d14">SVMs are another prominent example of discriminative models. They focus on finding the optimal hyperplane that separates different classes in the feature space, directly learning the decision boundary.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Discriminative model" target="Conditional random field">
+  <data key="d13">0.7</data>
+  <data key="d14">CRFs are discriminative models used for structured prediction, such as sequence labeling. They model the conditional probability of a label sequence given an input sequence, making them a discriminative approach for tasks where dependencies between labels are important.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Variational autoencoder" target="Autoencoder">
+  <data key="d13">0.9</data>
+  <data key="d14">Variational autoencoders are a type of autoencoder. They share the same fundamental architecture (encoder and decoder) and goal (learning a compressed representation), but VAEs add a probabilistic element to the encoding.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Variational autoencoder" target="Generative model">
+  <data key="d13">0.8</data>
+  <data key="d14">VAEs are generative models, meaning they can be used to generate new data samples similar to the training data. This is a key characteristic and application of VAEs.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Variational autoencoder" target="Latent variable model">
+  <data key="d13">0.75</data>
+  <data key="d14">VAEs are latent variable models because they learn a lower-dimensional latent space representation of the data. The encoder maps the input to a distribution in this latent space.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Variational autoencoder" target="Bayesian network">
+  <data key="d13">0.65</data>
+  <data key="d14">VAEs can be viewed as a type of Bayesian network with a specific structure. They use probabilistic inference to learn the parameters of the model.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Variational autoencoder" target="Principal component analysis">
+  <data key="d13">0.55</data>
+  <data key="d14">Both VAEs and PCA are dimensionality reduction techniques. While PCA is linear, VAEs can learn non-linear representations, but the underlying goal of finding a lower-dimensional representation is shared.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative adversarial network" target="Variational autoencoder">
+  <data key="d13">0.85</data>
+  <data key="d14">Both are generative models used for unsupervised learning, employing neural networks to learn latent representations and generate new data instances. Both also rely on training a model to reconstruct input data, though VAEs use a probabilistic encoder.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative adversarial network" target="Autoencoder">
+  <data key="d13">0.75</data>
+  <data key="d14">Autoencoders share the core concept of learning a compressed, latent representation of data. While not inherently generative like GANs, they form a building block for more complex generative models and can be adapted for generative purposes. GANs and Autoencoders both use neural networks to learn representations of data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative adversarial network" target="Generative model">
+  <data key="d13">0.9</data>
+  <data key="d14">Generative adversarial networks are a type of generative model. The concept of a generative model is a superset of GANs. Both aim to learn the underlying probability distribution of a dataset to generate new, similar samples.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative adversarial network" target="Artificial neural network">
+  <data key="d13">0.7</data>
+  <data key="d14">GANs are implemented using neural networks. The generator and discriminator in a GAN are typically neural networks. The underlying mathematical and computational framework is shared.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Generative adversarial network" target="Adversarial machine learning">
+  <data key="d13">0.8</data>
+  <data key="d14">GANs are a prime example of adversarial machine learning, where two models (generator and discriminator) compete against each other. The adversarial training process is a key characteristic of both concepts.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Autoregressive model" target="Markov model">
+  <data key="d13">0.85</data>
+  <data key="d14">Both are stochastic models where the future state depends only on the present state (Markov property). Autoregressive models are a specific type of Markov model applied to time series data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Autoregressive model" target="Recurrent neural network">
+  <data key="d13">0.8</data>
+  <data key="d14">RNNs, particularly LSTMs and GRUs, are often used to implement autoregressive models. They process sequential data by maintaining a hidden state that represents past information, similar to how an autoregressive model uses past values to predict future values.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Autoregressive model" target="Time series analysis">
+  <data key="d13">0.75</data>
+  <data key="d14">Autoregressive models are a fundamental tool in time series analysis for forecasting and understanding temporal dependencies in data. They are used to model the relationship between a variable and its past values.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Autoregressive model" target="Moving-average model">
+  <data key="d13">0.7</data>
+  <data key="d14">Moving-average models, along with autoregressive models, form the basis of ARMA (Autoregressive Moving Average) models. Both are linear time series models used for forecasting, but moving-average models use past error terms instead of past values of the time series itself.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Autoregressive model" target="Kalman filter">
+  <data key="d13">0.65</data>
+  <data key="d14">Kalman filters can be used to estimate the parameters of autoregressive models and to predict future values of a time series. They provide a recursive algorithm for estimating the state of a dynamic system from a series of noisy measurements, which is relevant in the context of autoregressive modeling.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Markov chain" target="Hidden Markov model">
+  <data key="d13">0.9</data>
+  <data key="d14">HMMs are a generalization of Markov chains where the state is not directly observable, but rather inferred through a probability distribution of observations. They share the Markov property and are used for modeling sequential data.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Markov chain" target="Markov process">
+  <data key="d13">0.85</data>
+  <data key="d14">Markov process is a general term for a stochastic process that satisfies the Markov property (memorylessness). A Markov chain is a specific type of Markov process with a discrete state space.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Markov chain" target="Stochastic process">
+  <data key="d13">0.75</data>
+  <data key="d14">Markov chains are a specific type of stochastic process. Stochastic processes are mathematical models used to represent the evolution of random variables over time, and Markov chains are a subset where the future state depends only on the present state.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Markov chain" target="Bayesian network">
+  <data key="d13">0.65</data>
+  <data key="d14">While not directly a Markov chain, Bayesian networks can represent dependencies between variables, and in some cases, a Bayesian network can be structured to represent a Markov chain or a Hidden Markov Model. Both are probabilistic graphical models.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Markov chain" target="Queueing theory">
+  <data key="d13">0.6</data>
+  <data key="d14">Queueing theory often uses Markov chains to model the state of a queue (e.g., the number of customers in the system). The arrival and service processes can be modeled as Markovian processes, allowing for analysis of queue performance.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Connectionism" target="Artificial neural network">
+  <data key="d13">0.95</data>
+  <data key="d14">Artificial neural networks are the primary computational models used in connectionism. They share the core principles of distributed representation, parallel processing, and learning through adjusting connection weights.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Connectionism" target="Cognitive science">
+  <data key="d13">0.85</data>
+  <data key="d14">Connectionism is a significant approach within cognitive science, offering a computational framework for understanding mental processes. It contrasts with symbolic AI but aims to explain cognition.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Connectionism" target="Parallel distributed processing">
+  <data key="d13">0.9</data>
+  <data key="d14">Parallel Distributed Processing (PDP) is often used synonymously with connectionism. It emphasizes the parallel nature of computation and the distributed representation of information across interconnected units.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Connectionism" target="Machine learning">
+  <data key="d13">0.8</data>
+  <data key="d14">Connectionist models, particularly neural networks, are a major part of machine learning. They learn from data by adjusting connection weights, enabling them to perform tasks without explicit programming.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Connectionism" target="Cognitive psychology">
+  <data key="d13">0.75</data>
+  <data key="d14">Connectionism provides a computational framework that can be used to model and understand cognitive processes studied in cognitive psychology, such as memory, perception, and language processing. It offers an alternative to traditional information processing models.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational neuroscience" target="Theoretical neuroscience">
+  <data key="d13">0.9</data>
+  <data key="d14">Theoretical neuroscience is a closely related field that uses mathematical and computational tools to develop theories and models of the nervous system. It often overlaps with computational neuroscience, with the distinction being a greater emphasis on abstract models and theoretical frameworks rather than direct simulation of biological details.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational neuroscience" target="Neuroinformatics">
+  <data key="d13">0.8</data>
+  <data key="d14">Neuroinformatics focuses on the organization, storage, analysis, and sharing of neuroscience data. It provides the infrastructure and tools necessary for computational neuroscience research, including databases, software, and standards for data exchange and analysis. Many computational neuroscientists rely on neuroinformatics resources.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational neuroscience" target="Cognitive neuroscience">
+  <data key="d13">0.75</data>
+  <data key="d14">Cognitive neuroscience investigates the neural basis of cognitive functions. Computational models are increasingly used in cognitive neuroscience to understand how the brain implements cognitive processes such as perception, attention, memory, and decision-making. Computational neuroscience provides tools and techniques for modeling these processes at different levels of abstraction.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational neuroscience" target="Artificial neural network">
+  <data key="d13">0.7</data>
+  <data key="d14">Artificial neural networks are computational models inspired by the structure and function of biological neural networks. They are a key tool in computational neuroscience for simulating and understanding neural computation. While ANNs are often simplified compared to biological networks, they provide valuable insights into how neural networks can perform complex tasks.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Computational neuroscience" target="Mathematical neuroscience">
+  <data key="d13">0.65</data>
+  <data key="d14">Mathematical neuroscience uses mathematical techniques to model and analyze neural systems. It is highly related to computational neuroscience, and the terms are sometimes used interchangeably. However, mathematical neuroscience may place a greater emphasis on analytical solutions and mathematical rigor, while computational neuroscience focuses more on simulations and numerical methods.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Cognitive science" target="Psychology">
+  <data key="d13">0.85</data>
+  <data key="d14">Psychology is a broad field encompassing the study of the mind and behavior, sharing significant overlap with cognitive science in areas like perception, memory, learning, and decision-making. Cognitive psychology is a major subfield of psychology that directly informs cognitive science.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Cognitive science" target="Neuroscience">
+  <data key="d13">0.8</data>
+  <data key="d14">Neuroscience provides the biological basis for cognitive processes. Cognitive neuroscience is a subfield that explicitly links brain activity to cognitive functions, making it highly relevant to understanding the mechanisms underlying cognition.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Cognitive science" target="Artificial intelligence">
+  <data key="d13">0.75</data>
+  <data key="d14">AI aims to create intelligent systems, often drawing inspiration from cognitive processes. Cognitive science provides theoretical frameworks and insights into human intelligence that can be applied to AI development. Conversely, AI models can serve as computational models for cognitive theories.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Cognitive science" target="Linguistics">
+  <data key="d13">0.7</data>
+  <data key="d14">Linguistics studies language, a core cognitive function. Cognitive linguistics explores the relationship between language, mind, and experience. Understanding language processing is crucial for understanding human cognition.</data>
+  <data key="d15">1</data>
+</edge>
+<edge source="Cognitive science" target="Philosophy of mind">
+  <data key="d13">0.65</data>
+  <data key="d14">Philosophy of mind explores fundamental questions about the nature of consciousness, mental states, and the mind-body problem. These philosophical inquiries provide a conceptual foundation for cognitive science and help to frame research questions.</data>
+  <data key="d15">1</data>
+</edge>
+</graph></graphml>

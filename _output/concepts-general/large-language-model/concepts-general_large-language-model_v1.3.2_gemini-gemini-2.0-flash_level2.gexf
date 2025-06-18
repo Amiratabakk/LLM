@@ -1,0 +1,673 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-06-18">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="12" title="similarity" type="double" />
+      <attribute id="13" title="reason" type="string" />
+      <attribute id="14" title="width" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="name" type="string" />
+      <attribute id="1" title="level" type="long" />
+      <attribute id="2" title="wikipedia_link" type="string" />
+      <attribute id="3" title="wikipedia_canonical" type="string" />
+      <attribute id="4" title="wikipedia_normalized" type="string" />
+      <attribute id="5" title="wikipedia_resp_code" type="long" />
+      <attribute id="6" title="wikipedia_content" type="string" />
+      <attribute id="7" title="processed" type="long" />
+      <attribute id="8" title="node_count" type="long" />
+      <attribute id="9" title="title" type="string" />
+      <attribute id="10" title="group" type="long" />
+      <attribute id="11" title="size" type="long" />
+    </attributes>
+    <nodes>
+      <node id="Large language model" label="Large language model">
+        <attvalues>
+          <attvalue for="0" value="Large language model" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Large_language_model" />
+          <attvalue for="3" value="Large_language_model" />
+          <attvalue for="4" value="Large language model" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation." />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0. &lt;a href='https://en.wikipedia.org/wiki/Large_language_model' target='_blank'&gt;Large language model&lt;/a&gt;&lt;br /&gt;A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation.&lt;br /&gt;[200, G1, L1, PR]" />
+          <attvalue for="10" value="1" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Transformer (machine learning model)" label="Transformer (machine learning model)">
+        <attvalues>
+          <attvalue for="0" value="Transformer (machine learning model)" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)" />
+          <attvalue for="3" value="Transformer_(deep_learning_architecture)" />
+          <attvalue for="4" value="Transformer (deep learning architecture)" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1. &lt;a href='https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)' target='_blank'&gt;Transformer (machine learning model)&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)' target='_blank'&gt;Transformer (deep learning architecture)&lt;/a&gt;&lt;br /&gt;The transformer is a deep learning architecture based on the multi-head attention mechanism, in which text is converted to numerical representations called tokens, and each token is converted into a vector via lookup from a word embedding table. At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminis&lt;br /&gt;[200, G2, L2, PR]" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Natural language processing" label="Natural language processing">
+        <attvalues>
+          <attvalue for="0" value="Natural Language Processing" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Natural_language_processing" />
+          <attvalue for="3" value="Natural_language_processing" />
+          <attvalue for="4" value="Natural language processing" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics." />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="2. &lt;a href='https://en.wikipedia.org/wiki/Natural_language_processing' target='_blank'&gt;Natural language processing&lt;/a&gt;&lt;br /&gt;Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation and computational linguistics, a subfield of linguistics.&lt;br /&gt;[200, G2, L2, PR]" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Deep learning" label="Deep learning">
+        <attvalues>
+          <attvalue for="0" value="Deep Learning" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Deep_learning" />
+          <attvalue for="3" value="Deep_learning" />
+          <attvalue for="4" value="Deep learning" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Deep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and &quot;training&quot; them to process data. The adjective &quot;deep&quot; refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised." />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="3" />
+          <attvalue for="9" value="3. &lt;a href='https://en.wikipedia.org/wiki/Deep_learning' target='_blank'&gt;Deep learning&lt;/a&gt;&lt;br /&gt;Deep learning is a subset of machine learning that focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and &quot;training&quot; them to process data. The adjective &quot;deep&quot; refers to the use of multiple layers in the network. Methods used can be either supervised, semi-supervised or unsupervised.&lt;br /&gt;[200, G2, L2, PR]" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Generative model" label="Generative model">
+        <attvalues>
+          <attvalue for="0" value="Generative model" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Generative_model" />
+          <attvalue for="3" value="Generative_model" />
+          <attvalue for="4" value="Generative model" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to &quot;generate&quot; random instances (outcomes" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="4" />
+          <attvalue for="9" value="4. &lt;a href='https://en.wikipedia.org/wiki/Generative_model' target='_blank'&gt;Generative model&lt;/a&gt;&lt;br /&gt;In statistical classification, two main approaches are called the generative approach and the discriminative approach. These compute classifiers by different approaches, differing in the degree of statistical modelling. Terminology is inconsistent, but three major types can be distinguished:A generative model is a statistical model of the joint probability distribution  on a given observable variable X and target variable Y; A generative model can be used to &quot;generate&quot; random instances (outcomes&lt;br /&gt;[200, G2, L2, PR]" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Artificial neural network" label="Artificial neural network">
+        <attvalues>
+          <attvalue for="0" value="Neural network" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Artificial_neural_network" />
+          <attvalue for="3" value="Neural_network_(machine_learning)" />
+          <attvalue for="4" value="Neural network (machine learning)" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks." />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="5" />
+          <attvalue for="9" value="5. &lt;a href='https://en.wikipedia.org/wiki/Artificial_neural_network' target='_blank'&gt;Artificial neural network&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Neural_network_(machine_learning)' target='_blank'&gt;Neural network (machine learning)&lt;/a&gt;&lt;br /&gt;In machine learning, a neural network is a computational model inspired by the structure and functions of biological neural networks.&lt;br /&gt;[200, G2, L2, PR]" />
+          <attvalue for="10" value="2" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Attention (machine learning)" label="Attention (machine learning)">
+        <attvalues>
+          <attvalue for="0" value="Attention Mechanism" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Attention_(machine_learning)" />
+          <attvalue for="3" value="Attention_(machine_learning)" />
+          <attvalue for="4" value="Attention (machine learning)" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by &quot;soft&quot; weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="6" />
+          <attvalue for="9" value="6. &lt;a href='https://en.wikipedia.org/wiki/Attention_(machine_learning)' target='_blank'&gt;Attention (machine learning)&lt;/a&gt;&lt;br /&gt;In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by &quot;soft&quot; weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence that can range from tens to millions of tokens in size.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Neural machine translation" label="Neural machine translation">
+        <attvalues>
+          <attvalue for="0" value="Neural Machine Translation" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Neural_machine_translation" />
+          <attvalue for="3" value="Neural_machine_translation" />
+          <attvalue for="4" value="Neural machine translation" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="7" />
+          <attvalue for="9" value="7. &lt;a href='https://en.wikipedia.org/wiki/Neural_machine_translation' target='_blank'&gt;Neural machine translation&lt;/a&gt;&lt;br /&gt;Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Sequence-to-sequence model" label="Sequence-to-sequence model">
+        <attvalues>
+          <attvalue for="0" value="Sequence-to-Sequence Model" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Sequence-to-sequence_model" />
+          <attvalue for="3" value="" />
+          <attvalue for="4" value="" />
+          <attvalue for="5" value="404" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="8" />
+          <attvalue for="9" value="8. &lt;a href='https://en.wikipedia.org/wiki/Sequence-to-sequence_model' target='_blank'&gt;Sequence-to-sequence model&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;[404, G500, L3, UN]" />
+          <attvalue for="10" value="500" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="BERT (language model)" label="BERT (language model)">
+        <attvalues>
+          <attvalue for="0" value="BERT (Bidirectional Encoder Representations from Transformers)" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/BERT_(language_model)" />
+          <attvalue for="3" value="BERT_(language_model)" />
+          <attvalue for="4" value="BERT (language model)" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value=" &#10;Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="9" />
+          <attvalue for="9" value="9. &lt;a href='https://en.wikipedia.org/wiki/BERT_(language_model)' target='_blank'&gt;BERT (language model)&lt;/a&gt;&lt;br /&gt; &#10;Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. It learns to represent text as a sequence of vectors using self-supervised learning. It uses the encoder-only transformer architecture. BERT dramatically improved the state-of-the-art for large language models. As of 2020, BERT is a ubiquitous baseline in natural language processing (NLP) experiments.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="GPT-3" label="GPT-3">
+        <attvalues>
+          <attvalue for="0" value="GPT (Generative Pre-trained Transformer)" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/GPT-3" />
+          <attvalue for="3" value="GPT-3" />
+          <attvalue for="4" value="GPT-3" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Generative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="10" />
+          <attvalue for="9" value="10. &lt;a href='https://en.wikipedia.org/wiki/GPT-3' target='_blank'&gt;GPT-3&lt;/a&gt;&lt;br /&gt;Generative Pre-trained Transformer 3 (GPT-3) is a large language model released by OpenAI in 2020.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Computational linguistics" label="Computational linguistics">
+        <attvalues>
+          <attvalue for="0" value="Computational Linguistics" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Computational_linguistics" />
+          <attvalue for="3" value="Computational_linguistics" />
+          <attvalue for="4" value="Computational linguistics" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Computational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="11" />
+          <attvalue for="9" value="11. &lt;a href='https://en.wikipedia.org/wiki/Computational_linguistics' target='_blank'&gt;Computational linguistics&lt;/a&gt;&lt;br /&gt;Computational linguistics is an interdisciplinary field concerned with the computational modelling of natural language, as well as the study of appropriate computational approaches to linguistic questions. In general, computational linguistics draws upon linguistics, computer science, artificial intelligence, mathematics, logic, philosophy, cognitive science, cognitive psychology, psycholinguistics, anthropology and neuroscience, among others. Computational linguistics is closely related to math&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Machine learning" label="Machine learning">
+        <attvalues>
+          <attvalue for="0" value="Machine Learning" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Machine_learning" />
+          <attvalue for="3" value="Machine_learning" />
+          <attvalue for="4" value="Machine learning" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="12" />
+          <attvalue for="9" value="12. &lt;a href='https://en.wikipedia.org/wiki/Machine_learning' target='_blank'&gt;Machine learning&lt;/a&gt;&lt;br /&gt;Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Artificial intelligence" label="Artificial intelligence">
+        <attvalues>
+          <attvalue for="0" value="Artificial Intelligence" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Artificial_intelligence" />
+          <attvalue for="3" value="Artificial_intelligence" />
+          <attvalue for="4" value="Artificial intelligence" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="13" />
+          <attvalue for="9" value="13. &lt;a href='https://en.wikipedia.org/wiki/Artificial_intelligence' target='_blank'&gt;Artificial intelligence&lt;/a&gt;&lt;br /&gt;Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Text mining" label="Text mining">
+        <attvalues>
+          <attvalue for="0" value="Text Mining" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Text_mining" />
+          <attvalue for="3" value="Text_mining" />
+          <attvalue for="4" value="Text mining" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Text mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves &quot;the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources.&quot; Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="14" />
+          <attvalue for="9" value="14. &lt;a href='https://en.wikipedia.org/wiki/Text_mining' target='_blank'&gt;Text mining&lt;/a&gt;&lt;br /&gt;Text mining, text data mining (TDM) or text analytics is the process of deriving high-quality information from text. It involves &quot;the discovery by computer of new, previously unknown information, by automatically extracting information from different written resources.&quot; Written resources may include websites, books, emails, reviews, and articles. High-quality information is typically obtained by devising patterns and trends by means such as statistical pattern learning. According to Hotho et al.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Speech recognition" label="Speech recognition">
+        <attvalues>
+          <attvalue for="0" value="Speech Recognition" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Speech_recognition" />
+          <attvalue for="3" value="Speech_recognition" />
+          <attvalue for="4" value="Speech recognition" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="&#10;Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="15" />
+          <attvalue for="9" value="15. &lt;a href='https://en.wikipedia.org/wiki/Speech_recognition' target='_blank'&gt;Speech recognition&lt;/a&gt;&lt;br /&gt;&#10;Speech recognition is an interdisciplinary subfield of computer science and computational linguistics that develops methodologies and technologies that enable the recognition and translation of spoken language into text by computers. It is also known as automatic speech recognition (ASR), computer speech recognition or speech-to-text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. The reverse process is speech synthesis.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Representation learning" label="Representation learning">
+        <attvalues>
+          <attvalue for="0" value="Representation Learning" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Representation_learning" />
+          <attvalue for="3" value="Feature_learning" />
+          <attvalue for="4" value="Feature learning" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="16" />
+          <attvalue for="9" value="16. &lt;a href='https://en.wikipedia.org/wiki/Representation_learning' target='_blank'&gt;Representation learning&lt;/a&gt; → &lt;a href='https://en.wikipedia.org/wiki/Feature_learning' target='_blank'&gt;Feature learning&lt;/a&gt;&lt;br /&gt;In machine learning (ML), feature learning or representation learning is a set of techniques that allow a system to automatically discover the representations needed for feature detection or classification from raw data. This replaces manual feature engineering and allows a machine to both learn the features and use them to perform a specific task.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Backpropagation" label="Backpropagation">
+        <attvalues>
+          <attvalue for="0" value="Backpropagation" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Backpropagation" />
+          <attvalue for="3" value="Backpropagation" />
+          <attvalue for="4" value="Backpropagation" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="17" />
+          <attvalue for="9" value="17. &lt;a href='https://en.wikipedia.org/wiki/Backpropagation' target='_blank'&gt;Backpropagation&lt;/a&gt;&lt;br /&gt;In machine learning, backpropagation is a gradient computation method commonly used for training a neural network to compute its parameter updates.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Convolutional neural network" label="Convolutional neural network">
+        <attvalues>
+          <attvalue for="0" value="Convolutional Neural Network" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Convolutional_neural_network" />
+          <attvalue for="3" value="Convolutional_neural_network" />
+          <attvalue for="4" value="Convolutional neural network" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced—in some cases—by newer deep learning architectures such as t" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="18" />
+          <attvalue for="9" value="18. &lt;a href='https://en.wikipedia.org/wiki/Convolutional_neural_network' target='_blank'&gt;Convolutional neural network&lt;/a&gt;&lt;br /&gt;A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. Convolution-based networks are the de-facto standard in deep learning-based approaches to computer vision and image processing, and have only recently been replaced—in some cases—by newer deep learning architectures such as t&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Discriminative model" label="Discriminative model">
+        <attvalues>
+          <attvalue for="0" value="Discriminative model" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Discriminative_model" />
+          <attvalue for="3" value="Discriminative_model" />
+          <attvalue for="4" value="Discriminative model" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Discriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="19" />
+          <attvalue for="9" value="19. &lt;a href='https://en.wikipedia.org/wiki/Discriminative_model' target='_blank'&gt;Discriminative model&lt;/a&gt;&lt;br /&gt;Discriminative models, also referred to as conditional models, are a class of models frequently used for classification. They are typically used to solve binary classification problems, i.e. assign labels, such as pass/fail, win/lose, alive/dead or healthy/sick, to existing datapoints.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Variational autoencoder" label="Variational autoencoder">
+        <attvalues>
+          <attvalue for="0" value="Variational autoencoder" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Variational_autoencoder" />
+          <attvalue for="3" value="Variational_autoencoder" />
+          <attvalue for="4" value="Variational autoencoder" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="20" />
+          <attvalue for="9" value="20. &lt;a href='https://en.wikipedia.org/wiki/Variational_autoencoder' target='_blank'&gt;Variational autoencoder&lt;/a&gt;&lt;br /&gt;In machine learning, a variational autoencoder (VAE) is an artificial neural network architecture introduced by Diederik P. Kingma and Max Welling. It is part of the families of probabilistic graphical models and variational Bayesian methods.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Generative adversarial network" label="Generative adversarial network">
+        <attvalues>
+          <attvalue for="0" value="Generative adversarial network" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Generative_adversarial_network" />
+          <attvalue for="3" value="Generative_adversarial_network" />
+          <attvalue for="4" value="Generative adversarial network" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent's gain is another agent's loss." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="21" />
+          <attvalue for="9" value="21. &lt;a href='https://en.wikipedia.org/wiki/Generative_adversarial_network' target='_blank'&gt;Generative adversarial network&lt;/a&gt;&lt;br /&gt;A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative artificial intelligence. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks compete with each other in the form of a zero-sum game, where one agent's gain is another agent's loss.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Autoregressive model" label="Autoregressive model">
+        <attvalues>
+          <attvalue for="0" value="Autoregressive model" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Autoregressive_model" />
+          <attvalue for="3" value="Autoregressive_model" />
+          <attvalue for="4" value="Autoregressive model" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="22" />
+          <attvalue for="9" value="22. &lt;a href='https://en.wikipedia.org/wiki/Autoregressive_model' target='_blank'&gt;Autoregressive model&lt;/a&gt;&lt;br /&gt;In statistics, econometrics, and signal processing, an autoregressive (AR) model is a representation of a type of random process; as such, it can be used to describe certain time-varying processes in nature, economics, behavior, etc. The autoregressive model specifies that the output variable depends linearly on its own previous values and on a stochastic term ; thus the model is in the form of a stochastic difference equation which should not be confused with a differential equation. Together w&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Markov chain" label="Markov chain">
+        <attvalues>
+          <attvalue for="0" value="Markov chain" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Markov_chain" />
+          <attvalue for="3" value="Markov_chain" />
+          <attvalue for="4" value="Markov chain" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, &quot;What happens next depends only on the state of affairs now.&quot; A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="23" />
+          <attvalue for="9" value="23. &lt;a href='https://en.wikipedia.org/wiki/Markov_chain' target='_blank'&gt;Markov chain&lt;/a&gt;&lt;br /&gt;In probability theory and statistics, a Markov chain or Markov process is a stochastic process describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. Informally, this may be thought of as, &quot;What happens next depends only on the state of affairs now.&quot; A countably infinite sequence, in which the chain moves state at discrete time steps, gives a discrete-time Markov chain (DTMC). A continuous-time process is called a&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Connectionism" label="Connectionism">
+        <attvalues>
+          <attvalue for="0" value="Connectionism" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Connectionism" />
+          <attvalue for="3" value="Connectionism" />
+          <attvalue for="4" value="Connectionism" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="24" />
+          <attvalue for="9" value="24. &lt;a href='https://en.wikipedia.org/wiki/Connectionism' target='_blank'&gt;Connectionism&lt;/a&gt;&lt;br /&gt;Connectionism is an approach to the study of human mental processes and cognition that utilizes mathematical models known as connectionist networks or artificial neural networks.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Computational neuroscience" label="Computational neuroscience">
+        <attvalues>
+          <attvalue for="0" value="Computational neuroscience" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Computational_neuroscience" />
+          <attvalue for="3" value="Computational_neuroscience" />
+          <attvalue for="4" value="Computational neuroscience" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system." />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="25" />
+          <attvalue for="9" value="25. &lt;a href='https://en.wikipedia.org/wiki/Computational_neuroscience' target='_blank'&gt;Computational neuroscience&lt;/a&gt;&lt;br /&gt;Computational neuroscience is a branch of neuroscience which employs mathematics, computer science, theoretical analysis and abstractions of the brain to understand the principles that govern the development, structure, physiology and cognitive abilities of the nervous system.&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+      <node id="Cognitive science" label="Cognitive science">
+        <attvalues>
+          <attvalue for="0" value="Cognitive science" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="https://en.wikipedia.org/wiki/Cognitive_science" />
+          <attvalue for="3" value="Cognitive_science" />
+          <attvalue for="4" value="Cognitive science" />
+          <attvalue for="5" value="200" />
+          <attvalue for="6" value="Cognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="26" />
+          <attvalue for="9" value="26. &lt;a href='https://en.wikipedia.org/wiki/Cognitive_science' target='_blank'&gt;Cognitive science&lt;/a&gt;&lt;br /&gt;Cognitive science is the interdisciplinary, scientific study of the mind and its processes. It examines the nature, the tasks, and the functions of cognition. Mental faculties of concern to cognitive scientists include perception, memory, attention, reasoning, language, and emotion. To understand these faculties, cognitive scientists borrow from fields such as psychology, economics, artificial intelligence, neuroscience, linguistics, and anthropology. The typical analysis of cognitive science sp&lt;br /&gt;[200, G3, L3, UN]" />
+          <attvalue for="10" value="3" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Large language model" target="Transformer (machine learning model)" id="0">
+        <attvalues>
+          <attvalue for="12" value="0.95" />
+          <attvalue for="13" value="Large language models are almost exclusively based on the Transformer architecture. Transformers provide the architectural foundation for LLMs' ability to process sequential data and generate text." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Large language model" target="Natural language processing" id="1">
+        <attvalues>
+          <attvalue for="12" value="0.85" />
+          <attvalue for="13" value="Large language models are a key technology within the field of Natural Language Processing. They are used to perform many NLP tasks, such as text generation, translation, and question answering." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Large language model" target="Deep learning" id="2">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="Large language models are a type of deep learning model, utilizing deep neural networks with many layers to learn complex patterns from data." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Large language model" target="Generative model" id="3">
+        <attvalues>
+          <attvalue for="12" value="0.75" />
+          <attvalue for="13" value="Large language models are generative models, meaning they are trained to generate new data (text) that is similar to the data they were trained on." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Large language model" target="Artificial neural network" id="4">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Large language models are a specific type of neural network, characterized by their large size and training on massive datasets. They leverage the principles of neural networks for learning and prediction." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Transformer (machine learning model)" target="Attention (machine learning)" id="5">
+        <attvalues>
+          <attvalue for="12" value="0.95" />
+          <attvalue for="13" value="The attention mechanism is the core component of the Transformer architecture. Transformers rely heavily on attention to weigh the importance of different parts of the input sequence when processing it. Without attention, the Transformer model would not function." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Transformer (machine learning model)" target="Neural machine translation" id="6">
+        <attvalues>
+          <attvalue for="12" value="0.85" />
+          <attvalue for="13" value="Transformers were initially developed to improve Neural Machine Translation (NMT) and achieved state-of-the-art results in this area. NMT is a primary application of Transformers, and many Transformer architectures are designed with translation tasks in mind." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Transformer (machine learning model)" target="Sequence-to-sequence model" id="7">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="Transformers are a type of sequence-to-sequence model, meaning they take a sequence as input and produce another sequence as output. While traditional sequence-to-sequence models often use recurrent neural networks (RNNs), Transformers offer an alternative approach using attention mechanisms." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Transformer (machine learning model)" target="BERT (language model)" id="8">
+        <attvalues>
+          <attvalue for="12" value="0.9" />
+          <attvalue for="13" value="BERT is a specific Transformer-based model designed for pre-training on large amounts of text data. It leverages the Transformer architecture to learn contextualized word embeddings, which can then be fine-tuned for various downstream tasks. BERT is a direct descendant and application of the Transformer architecture." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Transformer (machine learning model)" target="GPT-3" id="9">
+        <attvalues>
+          <attvalue for="12" value="0.88" />
+          <attvalue for="13" value="GPT is another Transformer-based model focused on generative tasks, particularly text generation. Like BERT, it is pre-trained on a massive dataset and then fine-tuned for specific applications. GPT showcases the versatility of the Transformer architecture beyond translation, demonstrating its effectiveness in language modeling and text generation." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Natural language processing" target="Computational linguistics" id="10">
+        <attvalues>
+          <attvalue for="12" value="0.9" />
+          <attvalue for="13" value="Computational linguistics is a closely related field that uses computational techniques to analyze and process natural language. It focuses on the formal modeling of language and the development of algorithms for language understanding and generation, sharing many of the same goals and methods as NLP." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Natural language processing" target="Machine learning" id="11">
+        <attvalues>
+          <attvalue for="12" value="0.85" />
+          <attvalue for="13" value="Machine learning is a core technology used in many NLP tasks. Modern NLP heavily relies on machine learning algorithms, particularly deep learning, for tasks like text classification, machine translation, and sentiment analysis. Machine learning provides the tools and techniques for NLP systems to learn from data and improve their performance." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Natural language processing" target="Artificial intelligence" id="12">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="NLP is a subfield of AI focused on enabling computers to understand, interpret, and generate human language. It's a key component in building intelligent systems that can interact with humans in a natural and intuitive way. NLP contributes to the broader goal of creating machines that can perform tasks that typically require human intelligence." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Natural language processing" target="Text mining" id="13">
+        <attvalues>
+          <attvalue for="12" value="0.75" />
+          <attvalue for="13" value="Text mining, also known as text data mining, is the process of extracting valuable information and knowledge from unstructured text data. It uses NLP techniques to analyze text and identify patterns, trends, and relationships. Text mining is often used for tasks like sentiment analysis, topic modeling, and information retrieval, which are also common applications of NLP." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Natural language processing" target="Speech recognition" id="14">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Speech recognition, also known as automatic speech recognition (ASR), is the process of converting spoken language into text. It is closely related to NLP because the output of speech recognition systems is often used as input for NLP tasks. Furthermore, many of the techniques used in speech recognition, such as acoustic modeling and language modeling, are also used in NLP." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Deep learning" target="Artificial neural network" id="15">
+        <attvalues>
+          <attvalue for="12" value="0.9" />
+          <attvalue for="13" value="Deep learning is a subset of neural networks, specifically those with multiple layers (deep neural networks). They share the same fundamental building blocks (neurons, weights, activation functions) and learning paradigms (backpropagation)." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Deep learning" target="Machine learning" id="16">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="Deep learning is a subfield of machine learning. Both involve algorithms that learn from data without explicit programming. Deep learning provides a specific approach to machine learning, often excelling in complex pattern recognition tasks." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Deep learning" target="Representation learning" id="17">
+        <attvalues>
+          <attvalue for="12" value="0.75" />
+          <attvalue for="13" value="Deep learning excels at representation learning, automatically discovering useful features from raw data. This is a core goal of representation learning, and deep learning provides powerful tools to achieve it." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Deep learning" target="Backpropagation" id="18">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Backpropagation is a key algorithm used to train deep neural networks. It's the primary method for adjusting the weights of the network based on the error in its predictions. While not exclusive to deep learning, it's essential for its success." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Deep learning" target="Convolutional neural network" id="19">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Convolutional Neural Networks (CNNs) are a specific type of deep neural network particularly well-suited for processing data with a grid-like topology, such as images. They are a very common and successful application of deep learning." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Generative model" target="Discriminative model" id="20">
+        <attvalues>
+          <attvalue for="12" value="0.85" />
+          <attvalue for="13" value="Discriminative models are the counterpart to generative models. Both are machine learning approaches, but discriminative models learn the conditional probability distribution P(y|x), while generative models learn the joint probability distribution P(x, y). They are often compared and contrasted in the context of classification and regression tasks." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Generative model" target="Variational autoencoder" id="21">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="Variational autoencoders (VAEs) are a type of generative model, specifically a probabilistic directed graphical model. They learn a latent space representation of the data and can then generate new samples by sampling from this latent space and decoding it. They are a concrete implementation of generative modeling using neural networks." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Generative model" target="Generative adversarial network" id="22">
+        <attvalues>
+          <attvalue for="12" value="0.75" />
+          <attvalue for="13" value="Generative adversarial networks (GANs) are another type of generative model that uses a system of two neural networks (a generator and a discriminator) to learn the data distribution and generate new samples. They are a popular and powerful approach to generative modeling, particularly for image generation." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Generative model" target="Autoregressive model" id="23">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Autoregressive models predict future values based on past values. In the context of generative modeling, they can be used to generate sequences of data, such as text or audio, by predicting the next element in the sequence based on the previous elements. They model the conditional probability of each element given the preceding elements." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Generative model" target="Markov chain" id="24">
+        <attvalues>
+          <attvalue for="12" value="0.65" />
+          <attvalue for="13" value="Markov chains are stochastic models that describe a sequence of possible events in which the probability of each event depends only on the state attained in the previous event. They can be used as generative models to simulate sequences of states, where each state is generated based on the transition probabilities from the previous state. Hidden Markov Models (HMMs) are a specific type of Markov model often used for generative sequence modeling." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Artificial neural network" target="Deep learning" id="25">
+        <attvalues>
+          <attvalue for="12" value="0.95" />
+          <attvalue for="13" value="Deep learning is a subfield of machine learning based on artificial neural networks with representation learning. Deep learning architectures such as deep neural networks, recurrent neural networks, convolutional neural networks and transformers have been applied to fields including computer vision, speech recognition, natural language processing, machine translation, bioinformatics, drug design, medical image analysis, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Artificial neural network" target="Machine learning" id="26">
+        <attvalues>
+          <attvalue for="12" value="0.85" />
+          <attvalue for="13" value="Artificial neural networks are a core component of many machine learning algorithms. Machine learning is a broader field that encompasses various techniques for enabling computers to learn from data without explicit programming, and neural networks are a powerful tool within this field." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Artificial neural network" target="Connectionism" id="27">
+        <attvalues>
+          <attvalue for="12" value="0.8" />
+          <attvalue for="13" value="Connectionism is an approach in the fields of cognitive science and artificial intelligence that uses artificial neural networks to explain mental phenomena. It emphasizes the interconnectedness of simple units (neurons) to produce complex behavior, mirroring the structure and function of the brain." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Artificial neural network" target="Computational neuroscience" id="28">
+        <attvalues>
+          <attvalue for="12" value="0.75" />
+          <attvalue for="13" value="Computational neuroscience uses mathematical models and computer simulations to study the nervous system. Artificial neural networks are often used as simplified models of biological neural networks to understand how the brain processes information." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Artificial neural network" target="Cognitive science" id="29">
+        <attvalues>
+          <attvalue for="12" value="0.7" />
+          <attvalue for="13" value="Cognitive science is the interdisciplinary study of mind and intelligence, which includes philosophy, neuroscience, artificial intelligence, linguistics, anthropology, psychology. Artificial neural networks are used as models of cognition and learning within cognitive science to understand how the brain performs cognitive tasks." />
+          <attvalue for="14" value="1" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

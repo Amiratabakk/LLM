@@ -1,0 +1,202 @@
+2025-06-13 17:40:00.882 | ERROR    | llmgraph.library.llm:make_call:48 - Exception from LLM call: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+Traceback (most recent call last):
+
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\llms\openai\openai.py", line 725, in completion
+    raise e
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\llms\openai\openai.py", line 653, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        │    └ <function OpenAIChatCompletion.make_sync_openai_chat_completion_request at 0x00000202B3EA6340>
+        └ <litellm.llms.openai.openai.OpenAIChatCompletion object at 0x00000202AFF3F200>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\litellm_core_utils\logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {'openai_client': <openai.OpenAI object at 0x00000202AFE60170>, 'data': {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'sys...
+             │     └ (<litellm.llms.openai.openai.OpenAIChatCompletion object at 0x00000202AFF3F200>,)
+             └ <function OpenAIChatCompletion.make_sync_openai_chat_completion_request at 0x00000202B3EA6200>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\llms\openai\openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\llms\openai\openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+                   │             │    │           │                 └ <function Completions.create at 0x00000202AFE2B880>
+                   │             │    │           └ <openai.resources.chat.completions.completions.CompletionsWithRawResponse object at 0x00000202AFE5BE60>
+                   │             │    └ <openai.resources.chat.completions.completions.Completions object at 0x00000202B6C63530>
+                   │             └ <openai.resources.chat.chat.Chat object at 0x00000202AFE5BEF0>
+                   └ <openai.OpenAI object at 0x00000202AFE60170>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\openai\_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+           │    │                 │   │     │       └ {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a highly knowledgeable ontologist and creator ...
+           │    │                 │   │     └ ()
+           │    │                 │   └ <bound method Completions.create of <openai.resources.chat.completions.completions.Completions object at 0x00000202B6C63530>>
+           │    │                 └ ~R
+           │    └ <class 'openai._legacy_response.LegacyAPIResponse'>
+           └ <function cast at 0x00000202A864C2C0>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           │     │       └ {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a highly knowledgeable ontologist and creator ...
+           │     └ (<openai.resources.chat.completions.completions.Completions object at 0x00000202B6C63530>,)
+           └ <function Completions.create at 0x00000202B6B62160>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+           │    └ <bound method SyncAPIClient.post of <openai.OpenAI object at 0x00000202AFE60170>>
+           └ <openai.resources.chat.completions.completions.Completions object at 0x00000202B6C63530>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+           │    │          │    │       │        │            │                  └ openai.Stream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+           │    │          │    │       │        │            └ False
+           │    │          │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers={'X-Stainless-Raw-Response': 'true'}, max_retr...
+           │    │          │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+           │    │          │    └ <function SyncAPIClient.request at 0x00000202AF6E0AE0>
+           │    │          └ <openai.OpenAI object at 0x00000202AFE60170>
+           │    └ ~ResponseT
+           └ <function cast at 0x00000202A864C2C0>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x00000202AF6D7240>
+          └ <openai.OpenAI object at 0x00000202AFE60170>
+
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\main.py", line 1865, in completion
+    raise e
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\main.py", line 1838, in completion
+    response = openai_chat_completions.completion(
+               │                       └ <function OpenAIChatCompletion.completion at 0x00000202B3EA62A0>
+               └ <litellm.llms.openai.openai.OpenAIChatCompletion object at 0x00000202AFF3F200>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\llms\openai\openai.py", line 736, in completion
+    raise OpenAIError(
+          └ <class 'litellm.llms.openai.common_utils.OpenAIError'>
+
+litellm.llms.openai.common_utils.OpenAIError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\schec\anaconda3\Scripts\llmgraph.exe\__main__.py", line 7, in <module>
+
+  File "C:\Users\schec\anaconda3\Lib\site-packages\typer\main.py", line 311, in __call__
+    return get_command(self)(*args, **kwargs)
+           │           │      │       └ {}
+           │           │      └ ()
+           │           └ <typer.main.Typer object at 0x00000202B66B9220>
+           └ <function get_command at 0x00000202AA99C400>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function TyperCommand.main at 0x00000202AA970E00>
+           └ <TyperCommand run>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\typer\core.py", line 716, in main
+    return _main(
+           └ <function _main at 0x00000202AA9700E0>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\typer\core.py", line 216, in _main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x00000202B685E420>
+         │    └ <function Command.invoke at 0x00000202A87B2980>
+         └ <TyperCommand run>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'levels': 3, 'llm_model': 'gpt-3.5-turbo', 'llm_temp': 0.0, 'allow_user_input': False, 'entity_type': 'concepts-general', 'e...
+           │   │      │    │           └ <click.core.Context object at 0x00000202B685E420>
+           │   │      │    └ <function run at 0x00000202B686F920>
+           │   │      └ <TyperCommand run>
+           │   └ <function Context.invoke at 0x00000202A87B1BC0>
+           └ <click.core.Context object at 0x00000202B685E420>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'levels': 3, 'llm_model': 'gpt-3.5-turbo', 'llm_temp': 0.0, 'allow_user_input': False, 'entity_type': 'concepts-general', 'e...
+           │         └ ()
+           └ <function run at 0x00000202B686F920>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\typer\main.py", line 683, in wrapper
+    return callback(**use_params)  # type: ignore
+           │          └ {'entity_type': 'concepts-general', 'entity_wikipedia': 'https://en.wikipedia.org/wiki/Large_language_model', 'entity_root': ...
+           └ <function run at 0x00000202B686D580>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\llmgraph\console.py", line 108, in run
+    engine.create_company_graph(
+    │      └ <function create_company_graph at 0x00000202B686D300>
+    └ <module 'llmgraph.library.engine' from 'C:\\Users\\schec\\anaconda3\\Lib\\site-packages\\llmgraph\\library\\engine.py'>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\llmgraph\library\engine.py", line 209, in create_company_graph
+    G = _process_graph(entity, entity_type, level, G, max_sum_total_tokens, output_folder, llm_config)
+        │              │       │            │      │  │                     │              └ {'version': '1.3.2', 'model': 'gpt-3.5-turbo', 'temperature': 0.0, 'base_url': None, 'delay': 0}
+        │              │       │            │      │  │                     └ './_output/'
+        │              │       │            │      │  └ 200000
+        │              │       │            │      └ <networkx.classes.digraph.DiGraph object at 0x00000202ABDB2F30>
+        │              │       │            └ 1
+        │              │       └ 'concepts-general'
+        │              └ 'Large language model'
+        └ <function _process_graph at 0x00000202B686D260>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\llmgraph\library\engine.py", line 138, in _process_graph
+    llm_response_dict_list = _call_llm_on_entity(source_entity, entity_type, llm_config)
+                             │                   │              │            └ {'version': '1.3.2', 'model': 'gpt-3.5-turbo', 'temperature': 0.0, 'base_url': None, 'delay': 0}
+                             │                   │              └ 'concepts-general'
+                             │                   └ 'Large language model'
+                             └ <function _call_llm_on_entity at 0x00000202AABE3420>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\llmgraph\library\engine.py", line 26, in _call_llm_on_entity
+    chat_response, total_tokens = llm.make_call(entity, system, prompt, llm_config)
+                                  │   │         │       │       │       └ {'version': '1.3.2', 'model': 'gpt-3.5-turbo', 'temperature': 0.0, 'base_url': None, 'delay': 0}
+                                  │   │         │       │       └ 'You are knowledgeable about many concepts and ontologies.. List, in json array format, the top 5 concepts most like \'Large ...
+                                  │   │         │       └ 'You are a highly knowledgeable ontologist and creator of knowledge graphs.'
+                                  │   │         └ 'Large language model'
+                                  │   └ MemorizedFunc(func=<function make_call at 0x00000202B4B95F80>, location=.joblib_cache\joblib)
+                                  └ <module 'llmgraph.library.llm' from 'C:\\Users\\schec\\anaconda3\\Lib\\site-packages\\llmgraph\\library\\llm.py'>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\joblib\memory.py", line 577, in __call__
+    return self._cached_call(args, kwargs, shelving=False)[0]
+           │    │            │     └ {}
+           │    │            └ ('Large language model', 'You are a highly knowledgeable ontologist and creator of knowledge graphs.', 'You are knowledgeable...
+           │    └ <function MemorizedFunc._cached_call at 0x00000202AD3284A0>
+           └ MemorizedFunc(func=<function make_call at 0x00000202B4B95F80>, location=.joblib_cache\joblib)
+  File "C:\Users\schec\anaconda3\Lib\site-packages\joblib\memory.py", line 532, in _cached_call
+    return self._call(call_id, args, kwargs, shelving)
+           │    │     │        │     │       └ False
+           │    │     │        │     └ {}
+           │    │     │        └ ('Large language model', 'You are a highly knowledgeable ontologist and creator of knowledge graphs.', 'You are knowledgeable...
+           │    │     └ ('llmgraph\\library\\llm\\make_call', '8eaaddab825acc3120d3f9c449abcdfd')
+           │    └ <function MemorizedFunc._call at 0x00000202AD328C20>
+           └ MemorizedFunc(func=<function make_call at 0x00000202B4B95F80>, location=.joblib_cache\joblib)
+  File "C:\Users\schec\anaconda3\Lib\site-packages\joblib\memory.py", line 771, in _call
+    output = self.func(*args, **kwargs)
+             │    │     │       └ {}
+             │    │     └ ('Large language model', 'You are a highly knowledgeable ontologist and creator of knowledge graphs.', 'You are knowledgeable...
+             │    └ <function make_call at 0x00000202B4B95F80>
+             └ MemorizedFunc(func=<function make_call at 0x00000202B4B95F80>, location=.joblib_cache\joblib)
+  File "C:\Users\schec\anaconda3\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           │    │   │       └ {}
+           │    │   └ ('Large language model', 'You are a highly knowledgeable ontologist and creator of knowledge graphs.', 'You are knowledgeable...
+           │    └ <function make_call at 0x00000202B4B94D60>
+           └ <Retrying object at 0x202b6896600 (stop=<tenacity.stop.stop_after_attempt object at 0x00000202ABE48470>, wait=<tenacity.wait....
+  File "C:\Users\schec\anaconda3\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             │   │       └ {}
+             │   └ ('Large language model', 'You are a highly knowledgeable ontologist and creator of knowledge graphs.', 'You are knowledgeable...
+             └ <function make_call at 0x00000202B4B94D60>
+> File "C:\Users\schec\anaconda3\Lib\site-packages\llmgraph\library\llm.py", line 41, in make_call
+    api_response = completion(
+                   └ <function completion at 0x00000202B4A2D6C0>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\utils.py", line 1285, in wrapper
+    raise e
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\utils.py", line 1163, in wrapper
+    result = original_function(*args, **kwargs)
+             │                  │       └ {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a highly knowledgeable ontologist and creator ...
+             │                  └ ()
+             └ <function completion at 0x00000202B4A2D440>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\main.py", line 3273, in completion
+    raise exception_type(
+          └ <function exception_type at 0x00000202B0B9D440>
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\litellm_core_utils\exception_mapping_utils.py", line 2271, in exception_type
+    raise e
+  File "C:\Users\schec\anaconda3\Lib\site-packages\litellm\litellm_core_utils\exception_mapping_utils.py", line 301, in exception_type
+    raise RateLimitError(
+          └ <class 'litellm.exceptions.RateLimitError'>
+
+litellm.exceptions.RateLimitError: litellm.RateLimitError: RateLimitError: OpenAIException - You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
